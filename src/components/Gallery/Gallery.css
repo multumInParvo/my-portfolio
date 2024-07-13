@@ -1,0 +1,157 @@
+.gallery-container {
+  min-height: 70vh;
+  visibility: visible;
+}
+.gallery-container.loading {
+  visibility: hidden;
+}
+.gallery-container .lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(39, 36, 36);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+.gallery-container .lightbox-overlay .close-return-button-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.gallery-container .lightbox-overlay .close-return-button-container .return-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.gallery-container .lightbox-overlay .close-return-button-container .close-button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  line-height: 0.5;
+  position: fixed;
+  right: 20px;
+  padding: 0;
+  font-size: 80px;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+  border: none;
+  font-weight: 100;
+}
+.gallery-container .lightbox-overlay .lightbox {
+  position: relative;
+  max-width: 100%;
+}
+.gallery-container .lightbox-overlay .lightbox .swiper-slide {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.gallery-container .lightbox-overlay .lightbox .swiper-slide img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  max-width: 100%;
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gallery-container .lightbox-overlay .lightbox .swiper-button-prev,
+.gallery-container .lightbox-overlay .lightbox .swiper-button-next {
+  padding: 0 20px;
+  color: #ffffff;
+}
+.gallery-container .lightbox-overlay .lightbox .swiper-button-prev::after,
+.gallery-container .lightbox-overlay .lightbox .swiper-button-next::after {
+  font-size: 26px;
+}
+.gallery-container .lightbox-overlay .lightbox .painting-container {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.gallery-container .lightbox-overlay .lightbox .painting-container .painting-title {
+  font-family: "Cinzel", sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
+.gallery-container .lightbox-overlay .lightbox .painting-container .painting-details {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+.gallery-container .lightbox-overlay .lightbox .painting-container .painting-details strong {
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .lightbox-overlay .close-return-button-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+  }
+  .lightbox-overlay .close-return-button-container .close-button {
+    display: none;
+  }
+  .lightbox-overlay .close-return-button-container .return-button {
+    position: fixed;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-overlay .close-return-button-container .return-button::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #808080;
+    position: absolute;
+    left: 0px;
+  }
+  .lightbox-overlay .close-return-button-container .return-button::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #808080;
+    border-top: 2px solid #808080;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 1px;
+    top: 12px;
+  }
+  .lightbox-overlay .lightbox {
+    max-width: 100%;
+  }
+  .lightbox-overlay .lightbox img {
+    max-width: 100%;
+    height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .lightbox-overlay .lightbox .swiper-button-prev,
+  .lightbox-overlay .lightbox .swiper-button-next {
+    display: none;
+  }
+}/*# sourceMappingURL=Gallery.css.map */

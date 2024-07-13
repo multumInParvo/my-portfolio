@@ -1,0 +1,138 @@
+.form-container {
+  padding-top: 30px;
+}
+.form-container form .first-last-name-container {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.form-container form .first-last-name-container .first-name-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.form-container form .first-last-name-container .first-name-container .first-name-label {
+  color: rgb(108, 98, 98);
+  font-size: 12px;
+}
+.form-container form .first-last-name-container .first-name-container .first-name-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.form-container form .first-last-name-container .last-name-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.form-container form .first-last-name-container .last-name-container .last-name-label {
+  color: rgb(108, 98, 98);
+  font-size: 12px;
+}
+.form-container form .first-last-name-container .last-name-container .last-name-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.form-container form .email-subject-container {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.form-container form .email-subject-container .email-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.form-container form .email-subject-container .email-container .email-label {
+  color: rgb(108, 98, 98);
+  font-size: 12px;
+}
+.form-container form .email-subject-container .email-container .email-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.form-container form .email-subject-container .subject-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.form-container form .email-subject-container .subject-container .subject-label {
+  color: rgb(108, 98, 98);
+  font-size: 12px;
+}
+.form-container form .email-subject-container .subject-container .subject-input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.form-container form .message-container {
+  width: 100%;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.form-container form .message-container .message-label {
+  color: rgb(108, 98, 98);
+  font-size: 12px;
+}
+.form-container form .message-container .message-textarea {
+  height: 90px;
+  width: 94%;
+  resize: none;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+}
+.form-container form .button-container {
+  display: flex;
+  justify-content: end;
+}
+.form-container form .button-container button {
+  padding: 0;
+  font-size: 24px;
+  font-weight: 500;
+  background: none;
+  font-family: "Cinzel", sans-serif;
+  color: rgb(193, 173, 140);
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 300px;
+  }
+  .form-container form .first-last-name-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container form .first-last-name-container .first-name-input {
+    text-align: center;
+  }
+  .form-container form .first-last-name-container .last-name-input {
+    text-align: center;
+  }
+  .form-container form .email-subject-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container form .email-subject-container .email-input {
+    text-align: center;
+  }
+  .form-container form .email-subject-container .subject-input {
+    text-align: center;
+  }
+  .form-container form .button-container button {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=Form.css.map */

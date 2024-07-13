@@ -1,0 +1,203 @@
+@import '../../styles/Colors.scss';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 70px 10% 50px 10%;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    .for-all-symbol {
+      font-size: 4rem;
+      letter-spacing: 2px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      font-weight: 100;
+      color: $logo-color;
+      font-family: 'Cinzel', sans-serif;
+      transition: transform 1.2s ease;
+    }
+  }
+}
+
+.menu {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  .menu-links {
+    letter-spacing: 5px;
+    color: $main-text-color;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $menu-color;
+    }
+  }
+
+  .instagram-logo {
+    color: $main-text-color;
+    font-size: 20px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $menu-color;
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.menu-icon:focus {
+  outline: none;
+}
+
+.slide-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  nav {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    gap: 40px;
+
+    .slide-menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    .logo {
+      padding: 0;
+
+      .logo-name-surname {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    top: 60px;
+    right: 20px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    transition: transform 0.4s;
+    z-index: 3;
+
+    .bar {
+      width: 100%;
+      height: 2px;
+      background-color: #808080;
+      position: absolute;
+      transition: all 0.4s;
+    }
+
+    .bar:nth-child(1) {
+      top: 0;
+    }
+
+    .bar:nth-child(2) {
+      top: 8px;
+    }
+
+    .bar:nth-child(3) {
+      top: 16px;
+    }
+
+    &.open .bar:nth-child(1) {
+      transform: rotate(45deg);
+      top: 8px;
+    }
+
+    &.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open .bar:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 8px;
+    }
+  }
+
+  .slide-menu {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+
+    .menu-links {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      color: $main-text-color;
+      text-decoration: none;
+    }
+  }
+
+  .slide-menu.open {
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay.show {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0s;
+}

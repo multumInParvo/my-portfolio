@@ -1,0 +1,37 @@
+@import '../../styles/Colors.scss';
+
+.footer {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  padding: 50px 10%;
+  text-align: center;
+
+  .footer-text {
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin: 0;
+
+    .footer-logo {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center;
+
+    .footer-text {
+      flex-direction: column-reverse;
+
+      .footer-logo {
+        display: flex;
+      }
+    }
+  }
+}

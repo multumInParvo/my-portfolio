@@ -1,0 +1,88 @@
+@import '../../styles/Colors.scss';
+
+.about-container {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+
+    .text-pic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .title-about {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: 100;
+            font-family: "Cinzel", sans-serif;
+        }
+
+        .about-text {
+            font-weight: 400;
+            line-height: 2;
+            font-size: 16px;
+            margin: 0;
+            width: 50%;
+            padding-bottom: 50px;
+        }
+
+        .about-image {
+            border: 10px solid white;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-container {
+
+        .text-pic-container {
+            .about-text {
+                width: 70%;
+            }
+
+            .about-image {
+                width: 70%;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        .text-pic-container {
+            padding: 0;
+
+            .title-about {
+                font-size: 1.4rem;
+            }
+
+            .about-text {
+                font-size: 16px;
+                width: 100%;
+            }
+
+            .about-image {
+                width: 90%;
+                padding-right: 0;
+            }
+        }
+    }
+}

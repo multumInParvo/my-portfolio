@@ -1,0 +1,135 @@
+@import '../../styles/Colors.scss';
+
+.form-container {
+    padding-top: 50px;
+
+    form {
+        .form-title {
+            padding-bottom: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            color: $main-text-color;
+        }
+
+        .name-container {
+            padding-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+            .name-label {
+                color: $contact-color;
+                font-size: 12px;
+            }
+
+            .name-input {
+                width: 336px;
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                outline: none;
+            }
+        }
+
+        .email-container {
+            padding-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+            .email-label {
+                color: $contact-color;
+                font-size: 12px;
+            }
+
+            .email-input {
+                width: 336px;
+                padding: 10px 0;
+                border: none;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                outline: none;
+            }
+        }
+
+        .message-container {
+            width: 100%;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+
+            .message-label {
+                color: $contact-color;
+                font-size: 12px;
+            }
+
+            .message-textarea {
+                height: 90px;
+                width: 94%;
+                resize: none;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid rgb(0, 0, 0);
+                outline: none;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: end;
+
+            button {
+                padding: 0;
+                font-size: 24px;
+                font-weight: 500;
+                background: none;
+                font-family: 'Cinzel', sans-serif;
+                color: $logo-color;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 300px;
+
+        form {
+            .name-container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+
+                .name-input {
+                    width: 300px;
+                    text-align: center;
+                }
+            }
+
+            .email-container {
+                display: flex;
+                flex-direction: column;
+
+                .email-input {
+                    text-align: center;
+                    width: 300px;
+                }
+            }
+
+            .button-container {
+                button {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
