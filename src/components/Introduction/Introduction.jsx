@@ -8,7 +8,7 @@ function Introduction() {
             <h1 className='introduction-name'>I'M OLEKSANDR PRYVALOV</h1>
             <div className='introduction-text'>
                 <p className='introduction-paragraph'>
-                    A front-end developer with an interest in both coding and art, appreciating minimalism in both fields.
+                    A front-end developer with an interest in coding and art, appreciating minimalism in both fields.
                     I'm looking for projects where I can apply what I've learned and continue to develop my skills.
                 </p>
                 <p className='introduction-paragraph'>
