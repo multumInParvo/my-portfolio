@@ -20,7 +20,7 @@ function About() {
             </Helmet>
             <div className='about-container'>
                 <div className='text-pic-container'>
-                    <h1 className='title-about'>About</h1>
+                    <h1 className='title-about'>About me</h1>
                     <p className='about-text'>
                         Oleksandr Pryvalov (born 1987) spent his childhood in Mykolaiv, Ukraine, but his artistic passion grew in Argentina after immigrating there with his parents.
                         While exploring various interests in his youth, art, particularly drawing and painting, remained a constant.
@@ -30,7 +30,6 @@ function About() {
                         Each mark left by the elements holds a potential story to uncover. Through his paintings, Pryvalov aims to capture the mark of time.
                         His works portray weathered exteriors, objects and characters that aim to transport the viewer to other times.
                     </p>
-                    <img className='about-image' src="/images/artist.webp" alt="Alt image" />
                 </div>
             </div>
         </HelmetProvider>

@@ -4,24 +4,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  padding: 70px 10% 50px 10%;
+  width: 70%;
+  padding: 70px 15% 50px 15%;
 
-  .logo {
+  .for-all-symbol {
     display: flex;
     align-items: center;
-
-    .for-all-symbol {
-      font-size: 4rem;
-      letter-spacing: 2px;
-      text-decoration: none;
-      display: flex;
-      flex-direction: row;
-      font-weight: 100;
-      color: $logo-color;
-      font-family: 'Cinzel', sans-serif;
-      transition: transform 1.2s ease;
-    }
+    font-size: 55px;
+    text-decoration: none;
+    color: #B6AAAA;
   }
 }
 
@@ -36,17 +27,7 @@ nav {
     letter-spacing: 5px;
     color: $main-text-color;
     text-decoration: none;
-    transition: color 0.2s;
-
-    &:hover {
-      color: $menu-color;
-    }
-  }
-
-  .instagram-logo {
-    color: $main-text-color;
-    font-size: 20px;
-    transition: color 0.2s;
+    transition: color 1000ms;
 
     &:hover {
       color: $menu-color;

@@ -30,7 +30,7 @@
                 width: 336px;
                 padding: 10px 0;
                 border: none;
-                border-bottom: 1px solid rgb(0, 0, 0);
+                border: 1px solid rgb(240, 240, 240);
                 outline: none;
             }
         }
@@ -53,7 +53,7 @@
                 width: 336px;
                 padding: 10px 0;
                 border: none;
-                border-bottom: 1px solid rgb(0, 0, 0);
+                border: 1px solid rgb(240, 240, 240);
                 outline: none;
             }
         }
@@ -66,6 +66,7 @@
             flex-direction: column;
 
             .message-label {
+                padding-bottom: 15px;
                 color: $contact-color;
                 font-size: 12px;
             }
@@ -76,7 +77,7 @@
                 resize: none;
                 padding: 10px;
                 border: none;
-                border-bottom: 1px solid rgb(0, 0, 0);
+                border: 1px solid rgb(240, 240, 240);
                 outline: none;
             }
         }

@@ -29,11 +29,9 @@ function Header() {
 
     return (
         <nav>
-            <div className='logo'>
-                <Link to="/" className='for-all-symbol'>
-                    ∀
-                </Link>
-            </div>
+            <Link to="/" className='for-all-symbol'>
+                ∀
+            </Link>
             <div className="menu">
                 <Link to="/about" className='menu-links'>ABOUT</Link>
                 <Link to="/projects" className='menu-links'>PROJECTS</Link>

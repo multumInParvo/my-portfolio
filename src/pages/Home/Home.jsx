@@ -2,7 +2,7 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import '../Home/Home.scss';
-import Carousel from '../../components/Carousel/Carousel';
+import Introduction from '../../components/Introduction/Introduction';
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
         <Helmet>
           <title>Oleksandr Pryvalov</title>
         </Helmet>
-        <Carousel />
+        <Introduction />
       </div>
     </HelmetProvider>
   );
