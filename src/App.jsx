@@ -9,10 +9,12 @@ import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
+import Cursor from './components/Cursor/Cursor';
 
 function App() {
   return (
     <div className="app">
+      <Cursor />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
