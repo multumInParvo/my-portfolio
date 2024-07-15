@@ -3,6 +3,7 @@ import { motion, useSpring } from 'framer-motion';
 
 const Cursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
   
   const outerSpringConfig = { damping: 30, stiffness: 150 };
   const innerSpringConfig = { damping: 20, stiffness: 300 };
@@ -13,6 +14,19 @@ const Cursor = () => {
   const innerY = useSpring(0, innerSpringConfig);
 
   useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth > 1024);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (!isLargeScreen) return;
+
     const updateMousePosition = (ev) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
       outerX.set(ev.clientX - 40);
@@ -26,7 +40,9 @@ const Cursor = () => {
     return () => {
       window.removeEventListener('mousemove', updateMousePosition);
     };
-  }, [outerX, outerY, innerX, innerY]);
+  }, [isLargeScreen, outerX, outerY, innerX, innerY]);
+
+  if (!isLargeScreen) return null;
 
   return (
     <>
