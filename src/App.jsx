@@ -10,10 +10,12 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Gallery from './components/Gallery/Gallery';
 import Cursor from './components/Cursor/Cursor';
+import Background from './components/Background/Background';
 
 function App() {
   return (
     <div className="app">
+      <Background />
       <Cursor />
       <Header />
       <Routes>
