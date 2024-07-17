@@ -7,7 +7,7 @@ nav {
   width: 70%;
   padding: 70px 15% 50px 15%;
 
-  .for-all-symbol {
+  .asterisk-symbol {
     display: flex;
     align-items: center;
     font-size: 55px;
@@ -64,7 +64,8 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    padding: 30px 20px;
+    width: 86%;
+    padding: 30px 7% 20px 7%;
     flex-direction: column;
     align-items: start;
     justify-content: center;

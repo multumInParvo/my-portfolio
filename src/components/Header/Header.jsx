@@ -29,8 +29,8 @@ function Header() {
 
     return (
         <nav>
-            <Link to="/" className='for-all-symbol'>
-                ∀
+            <Link to="/" className='asterisk-symbol'>
+            ✣
             </Link>
             <div className="menu">
                 <Link to="/about" className='menu-links'>ABOUT</Link>
