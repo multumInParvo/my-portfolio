@@ -10,11 +10,11 @@ function Contact() {
             <Helmet>
                 <title>CONTACT | oleksandr pryvalov</title>
             </Helmet>
-            <h1 className='contact-title'>Contact</h1>
             <div className='contact-container'>
+                <h1 className='contact-title'>CONTACT</h1>
                 <div className='info-container'>
                     <div className='contact-info'>
-                        <span className='contact-detail-title'>E-MAIL ME</span>
+                        <span className='contact-detail-title'>Ask me anything here or send an email directly to</span>
                         <span className='contact-detail'>oleksandrpryv@gmail.com</span>
                     </div>
                     <Form />
