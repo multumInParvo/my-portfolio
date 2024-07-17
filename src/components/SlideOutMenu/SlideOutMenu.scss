@@ -1,0 +1,67 @@
+@import '../../styles/Colors.scss';
+
+.slide-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  gap: 100px;
+  top: 0;
+  bottom: 0;
+  right: -50%; 
+  width: 50%;
+  height: 100%;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  overflow: hidden;
+
+  &.open {
+    right: 0; 
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(120deg, #d6dadf, #e6e4d5f8, #f0e7ddf8);
+  }
+
+  .grid {
+    width: 100%;
+    height: 100%;
+    background-size: 20px;
+    background-image: 
+        linear-gradient(to right, rgba(190, 206, 223, 0.52) 1px, transparent 1px);
+  }
+
+  .menu-links {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: $main-text-color;
+    text-decoration: none;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 769px) {
+  .slide-menu, .overlay {
+    display: none;
+  }
+}
