@@ -25,7 +25,7 @@ function Projects() {
       <h1 className='title-works'>Projects</h1>
       <div className="gallery-container">
         <ResponsiveMasonry
-          columnsCountBreakPoints={{ 350: 2, 750: 3, 900: 3 }}
+          columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 2 }}
         >
           <Masonry gutter="5px">
             {paintings.map((painting, index) => (
