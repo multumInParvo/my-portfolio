@@ -39,7 +39,6 @@ const Form = () => {
     return (
         <div className='form-container'>
             <form onSubmit={handleSubmit}>
-                <div className='form-title'>ASK ME ANYTHING</div>
                 <div className='name-container'>
                     <label className='name-label'>Name</label>
                     <input className='name-input' type="text" name="name" value={formData.name} onChange={handleChange} required />
