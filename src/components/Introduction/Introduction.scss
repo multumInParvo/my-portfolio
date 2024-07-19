@@ -2,9 +2,84 @@
     width: 60%;
 
     .introduction-name {
+        color: rgb(46, 38, 38);
         margin: 100px 0 25px 0;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 35px;
+        text-transform: uppercase;
+        position: relative;
+
+        text-shadow: 2px 0 0 rgba(255, 0, 0, 0.75),
+            -1px -2px 0 rgba(0, 255, 0, 0.75),
+            1px 2px 0 rgba(0, 0, 255, 0.75);
+
+        animation: introduction-name 500ms infinite;
+    }
+
+    .introduction-name span {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .introduction-name span:first-child {
+        animation: introduction-name 650ms infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        transform: translate(-1px, -0.0125em);
+        /* color: green; */
+        opacity: 1;
+    }
+
+    .introduction-name span:last-child {
+        animation: introduction-name 450ms infinite;
+        clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+        transform: translate(0.0125em, 1px);
+        /* color: red; */
+        opacity: 1;
+    }
+
+    @keyframes introduction-name {
+        0% {
+            text-shadow: 2px 0 0 rgba(255, 0, 0, 0.75),
+                -2px -1px 0 rgba(0, 255, 0, 0.75),
+                -1px 2px 0 rgba(0, 0, 255, 0.75);
+        }
+
+        14% {
+            text-shadow: 2px 0 0 rgba(255, 0, 0, 0.75),
+                -2px -1px 0 rgba(0, 255, 0, 0.75),
+                -1px 2px 0 rgba(0, 0, 255, 0.75);
+        }
+
+        15% {
+            text-shadow: -2px -1px 0 rgba(255, 0, 0, 0.75),
+                1px 1px 0 rgba(0, 255, 0, 0.75),
+                -2px -2px 0 rgba(0, 0, 255, 0.75);
+        }
+
+        49% {
+            text-shadow: -2px -1px 0 rgba(255, 0, 0, 0.75),
+                1px 1px 0 rgba(0, 255, 0, 0.75),
+                -2px -2px 0 rgba(0, 0, 255, 0.75);
+        }
+
+        50% {
+            text-shadow: 1px 2px 0 rgba(255, 0, 0, 0.75),
+                2px 0 0 rgba(0, 255, 0, 0.75), 
+                0 -2px 0 rgba(0, 0, 255, 0.75);
+        }
+
+        99% {
+            text-shadow: 1px 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75), 
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+        }
+
+        100% {
+            text-shadow: -1px 0 0 rgba(255, 0, 0, 0.75),
+                -1px -1px 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+        }
     }
 
     .introduction-text {
