@@ -7,10 +7,12 @@ import '../Contact/Contact.scss';
 function Contact() {
     return (
         <HelmetProvider>
+            <div className='contact-form-container'>
             <Helmet>
                 <title>CONTACT | oleksandr pryvalov</title>
             </Helmet>
             <Form />
+            </div>
         </HelmetProvider>
     );
 }

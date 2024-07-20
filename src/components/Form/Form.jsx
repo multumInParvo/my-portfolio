@@ -1,4 +1,3 @@
-// Form.jsx
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Form.scss';
@@ -37,19 +36,24 @@ const Form = () => {
     };
 
     return (
-        <div className='form-container'>
-            <form onSubmit={handleSubmit}>
-                <div className='name-container'>
-                    <label className='name-label'>Name</label>
-                    <input className='name-input' type="text" name="name" value={formData.name} onChange={handleChange} required />
+        <div className='contact-container'>
+            <h1 className='contact-title'>CONTACT</h1>
+            <div className='contact-info'>
+                <span className='contact-detail-title'>Ask me anything here or send an email directly to</span>
+                <span className='contact-detail'>oleksandrpryv@gmail.com</span>
+            </div>
+            <form className='form' onSubmit={handleSubmit}>
+                <div className='input-container'>
+                    <label className='input-label'>Name</label>
+                    <input className='input' type="text" name="name" value={formData.name} onChange={handleChange} required />
                 </div>
-                <div className='email-container'>
-                    <label className='email-label'>Email</label>
-                    <input className='email-input' type="email" name="email" value={formData.email} onChange={handleChange} required />
+                <div className='input-container'>
+                    <label className='input-label'>Email</label>
+                    <input className='input' type="email" name="email" value={formData.email} onChange={handleChange} required />
                 </div>
-                <div className='message-container'>
-                    <label className='message-label'>Message</label>
-                    <textarea className='message-textarea' name="message" value={formData.message} onChange={handleChange} required></textarea>
+                <div className='input-container'>
+                    <label className='input-label'>Message</label>
+                    <textarea className='textarea' name="message" value={formData.message} onChange={handleChange} required></textarea>
                 </div>
                 <div className='button-container'>
                     <button type="submit">SEND</button>
