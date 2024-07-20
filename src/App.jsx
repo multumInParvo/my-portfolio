@@ -8,7 +8,6 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import Gallery from './components/Gallery/Gallery';
 import Cursor from './components/Cursor/Cursor';
 import Background from './components/Background/Background';
 
@@ -23,7 +22,6 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery/:index" element={<Gallery />} />
       </Routes>
       <Footer />
     </div>
