@@ -20,7 +20,7 @@ function About() {
             </Helmet>
             <div className='about-container'>
                 <div className='text-pic-container'>
-                    <h1 className='title-about'>About me</h1>
+                    <h1 className='title-about'></h1>
                     <p className='about-text'>
 
                     </p>
