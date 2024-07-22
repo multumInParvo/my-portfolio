@@ -1,0 +1,51 @@
+[
+    {
+        "picture": "/images/724_events.webp",
+        "title": "724events",
+        "website": "https://ocp-10-724events.vercel.app",
+        "github": "https://github.com/multumInParvo/OCP10_724events.git",
+        "description": "Ce projet consiste à débugger et finaliser le développement d'un site web one-page."
+    },
+    {
+        "picture": "/images/argent_bank.webp",
+        "title": "Argent Bank",
+        "website": "https://argent-bank-roan.vercel.app",
+        "github": "https://github.com/multumInParvo/ocp11_ArgentBank.git",
+        "description": "Ce projet consiste en developper le front-end d'une application bancaire avec React et Redux."
+    },
+    {
+        "picture": "/images/booki.webp",
+        "title": "Booki",
+        "website": "https://multuminparvo.github.io/ocp_3_booki/",
+        "github": "https://github.com/multumInParvo/ocp_3_booki.git",
+        "description": "Ce projet consiste à créer la page d'accueil d'une agence de voyage en HTML et CSS."
+    },
+    {
+        "picture": "/images/kasa.webp",
+        "title": "Kasa",
+        "website": "https://kasareact-project-oleksandrs-projects-e99274ac.vercel.app",
+        "github": "https://github.com/multumInParvo/OCP8_kasa_react.git",
+        "description": "Ce projet consiste à développer le front-end d'une applicationen en utilisant React et React Router."
+    },
+    {
+        "picture": "/images/ohmyfood.webp",
+        "title": "OhMyFood",
+        "website": "https://multuminparvo.github.io/OCP4_ohmyfood/",
+        "github": "https://github.com/multumInParvo/OCP4_ohmyfood.git",
+        "description": "Ce projet consiste à développer l'interface mobile-first du site web d'une start-up."
+    },
+    {
+        "picture": "/images/print_it.webp",
+        "title": "Print it",
+        "website": "https://multuminparvo.github.io/OCP5_print_it-/",
+        "github": "https://github.com/multumInParvo/OCP5_print_it-.git",
+        "description": "Ce projet consiste à dynamiser le site statique d'une imprimerie en créant un carrousel interactif avec JavaScript."
+    },
+    {
+        "picture": "/images/riding_cities.webp",
+        "title": "Riding Cities",
+        "website": "https://multuminparvo.github.io/OCP_2_riding_cities/",
+        "github": "https://github.com/multumInParvo/OCP_2_riding_cities.git",
+        "description": "Ce projet consiste à mettre à jour la page web d'une association en utilisant HTML, conformément aux maquettes fournies."
+    }
+]
