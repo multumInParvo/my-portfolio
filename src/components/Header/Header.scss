@@ -10,7 +10,7 @@ nav {
   .asterisk-symbol {
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 50px;
     color: #6d6262;
     text-decoration: none;
   }
@@ -24,6 +24,7 @@ nav {
   gap: 50px;
 
   .menu-links {
+    font-size: 14px;
     letter-spacing: 5px;
     color: #6d6262;
     text-decoration: none;

@@ -6,9 +6,7 @@ function Introduction() {
     return (
         <div className="introduction-container">
             <h1 className='introduction-name'>
-                <span aria-hidden="true">i'm oleksandr pryvalov</span>
                 i'm oleksandr pryvalov
-                <span aria-hidden="true">i'm oleksandr pryvalov</span>
             </h1>
             <div className='introduction-text'>
                 <p className='introduction-paragraph'>
