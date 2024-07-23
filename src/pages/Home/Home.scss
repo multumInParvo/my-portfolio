@@ -1,7 +1,17 @@
 
-.home {
-    min-height: 70vh;
+.home-container {
+    min-height: 60vh;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+
+    .menu-section-title {
+        text-transform: uppercase;
+        width: 50%;
+        font-size: 2.2rem;
+        margin: 0 0 50px;
+        font-weight: 400;
+        text-align: start;
+        color: rgb(69, 108, 135);
+    }
 }

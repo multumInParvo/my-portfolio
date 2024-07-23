@@ -8,10 +8,11 @@ function Contact() {
     return (
         <HelmetProvider>
             <div className='contact-form-container'>
-            <Helmet>
-                <title>CONTACT | oleksandr pryvalov</title>
-            </Helmet>
-            <Form />
+                <h1 className='menu-section-title'>CONTACT</h1>
+                <Helmet>
+                    <title>CONTACT | oleksandr pryvalov</title>
+                </Helmet>
+                <Form />
             </div>
         </HelmetProvider>
     );
