@@ -37,7 +37,6 @@ const Form = () => {
 
     return (
         <div className='contact-container'>
-            <h1 className='contact-title'>CONTACT</h1>
             <div className='contact-info'>
                 <span className='contact-detail-title'>Ask me anything here or send an email directly to</span>
                 <span className='contact-detail'>oleksandrpryv@gmail.com</span>
