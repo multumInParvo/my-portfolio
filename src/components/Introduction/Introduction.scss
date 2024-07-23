@@ -1,14 +1,5 @@
 .introduction-container {
-    width: 60%;
-
-    .introduction-name {
-        color: rgb(88, 76, 76);
-        margin: 100px 0 25px 0;
-        font-weight: 500;
-        font-size: 35px;
-        text-transform: uppercase;
-        position: relative;
-    }
+    width: 50%;
 
     .introduction-text {
         margin: 0;
@@ -25,9 +16,5 @@
 @media (max-width: 768px) {
     .introduction-container {
         width: 80%;
-
-        .introduction-name {
-            margin: 25px 0 25px 0;
-        }
     }
 }
