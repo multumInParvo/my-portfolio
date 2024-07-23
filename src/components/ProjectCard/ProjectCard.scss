@@ -1,0 +1,32 @@
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 16px 16px 0;
+    padding: 16px;
+    text-align: center;
+    flex: 1 1 calc(50% - 32px);
+    box-sizing: border-box;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .project-links a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .project-card  {
+      flex: none;
+      margin: 0 0 16px 0;
+      width: 100%;
+    }
+  }
+  
