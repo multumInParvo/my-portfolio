@@ -8,7 +8,7 @@ function Home() {
   return (
     <HelmetProvider>
       <div className='home-container'>
-      <h1 className='menu-section-title'>i'm oleksandr pryvalov</h1>
+        <h1 className='menu-section-title'>i'm oleksandr pryvalov</h1>
         <Helmet>
           <title>Oleksandr Pryvalov</title>
         </Helmet>
