@@ -8,9 +8,9 @@ function Contact() {
     return (
         <HelmetProvider>
             <div className='contact-form-container'>
-                <h1 className='menu-section-title'>CONTACT</h1>
+                <h1 className='menu-section-title'>Contact</h1>
                 <Helmet>
-                    <title>CONTACT | oleksandr pryvalov</title>
+                    <title>Contact | oleksandr pryvalov</title>
                 </Helmet>
                 <Form />
             </div>
