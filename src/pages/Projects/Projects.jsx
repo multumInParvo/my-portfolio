@@ -17,13 +17,13 @@ function Projects() {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setTimeout(() => setSelectedProject(null), 300); // Wait for the closing animation
+    setTimeout(() => setSelectedProject(null), 300); 
   };
 
   return (
     <HelmetProvider>
       <div className='projects'>
-        <h1 className='menu-section-title'>PROJECTS</h1>
+        <h1 className='menu-section-title'>Projects</h1>
         <Helmet>
           <title>Projects | Oleksandr Pryvalov</title>
         </Helmet>
