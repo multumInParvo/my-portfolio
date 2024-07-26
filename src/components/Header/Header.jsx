@@ -9,25 +9,29 @@ function Header() {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <nav>
-            <Link to="/" className='asterisk-symbol'>✣</Link>
-            <div className="menu">
-                <Link to="/about" className='menu-links'>ABOUT</Link>
-                <Link to="/projects" className='menu-links'>PROJECTS</Link>
-                <Link to="/contact" className='menu-links'>CONTACT</Link>
-            </div>
-            <button
-                className={`menu-icon ${menuOpen ? 'open' : ''}`}
-                onClick={toggleMenu}
-                aria-expanded={menuOpen}
-                aria-label="Toggle menu"
-            >
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
-            </button>
+        <header>
+            <nav aria-label="Main Navigation">
+                <Link to="/" className='home-link' aria-label="Home">
+                    <span className='asterisk-symbol' aria-hidden="true">✣</span>
+                    <span className="visually-hidden">Home</span>
+                </Link>
+                <div className="menu">
+                    <Link to="/projects" className='menu-links'>PROJECTS</Link>
+                    <Link to="/contact" className='menu-links'>CONTACT</Link>
+                </div>
+                <button
+                    className={`menu-icon ${menuOpen ? 'open' : ''}`}
+                    onClick={toggleMenu}
+                    aria-expanded={menuOpen}
+                    aria-label="Toggle menu"
+                >
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </button>
+            </nav>
             <SlideOutMenu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-        </nav>
+        </header>
     );
 }
 
