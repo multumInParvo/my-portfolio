@@ -55,7 +55,7 @@ const Form = () => {
                     <textarea className='textarea' name="message" value={formData.message} onChange={handleChange} required></textarea>
                 </div>
                 <div className='button-container'>
-                    <button type="submit">SEND</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
         </div>

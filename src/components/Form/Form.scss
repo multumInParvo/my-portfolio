@@ -1,11 +1,10 @@
 @import '../../styles/Colors.scss';
 
 .contact-container {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 60vh;
 
     .contact-info {
         width: 100%;
@@ -14,14 +13,17 @@
         text-align: start;
         justify-content: space-between;
         margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #9c9797;
 
-        .contact-detail-title,
-        .contact-detail {
-            font-size: 12px;
-            color: $contact-color;
+        .contact-detail-title {
+            font-weight: 600;
+            font-size: 14px;
+            color: #6d6d6d;
         }
 
         .contact-detail {
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
         }
@@ -49,33 +51,50 @@
             flex-direction: column;
 
             .input-label {
-                color: $contact-color;
-                font-size: 12px;
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 14px;
+                color: #6d6d6d;
             }
 
             .input,
             .textarea {
-                width: 100%;
-                padding: 10px 0;
-                border: 1px solid rgb(240, 240, 240);
-                outline: none;
+                height: 40px;
+                width: 70%;
+                padding: 0;
+                border: none;
+                background-color: rgba(0, 85, 142, 0.1);
+                color: #000000;
                 resize: none;
+
+                &::placeholder {
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:focus {
+                    background-color: rgba(0, 85, 142, 0.1);
+                    outline: none;
+                }
             }
 
             .textarea {
-                height: 90px;
+                height: 150px;
             }
         }
 
         .button-container {
+            width: 70%;
+            margin-top: 30px;
             display: flex;
             justify-content: flex-end;
 
             button {
-                font-size: 24px;
-                font-weight: 300;
-                background: none;
-                color: rgb(159, 166, 164);
+                padding: 10px 20px;
+                font-size: 14px;
+                font-weight: 600;
+                background: #6d6d6d;
+                color: #ffffff;
+                border-radius: 8px;
                 border: none;
                 cursor: pointer;
             }
@@ -83,31 +102,41 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .contact-container {
+        width: 90%;
+
+        .contact-info {
+            flex-direction: column;
+            margin-bottom: 50px;
+            border-bottom: none;
+
+            .contact-detail {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .contact-container {
-        width: 80%;
+        width: 90%;
 
-        .contact-title {
-            font-size: 1.8rem;
+        .contact-info {
+            margin-bottom: 0;
         }
 
-        .contact-info {}
-
         .form {
-
             .input-container {
 
                 .input,
                 .textarea {
-                    text-align: center;
+                    width: 100%;
                 }
             }
 
             .button-container {
-
-                button {
-                    font-size: 20px;
-                }
+                width: 100%;
             }
         }
     }
