@@ -1,5 +1,5 @@
 .introduction-container {
-    width: 50%;
+    width: 60%;
 
     .introduction-text {
         margin: 0;
@@ -13,8 +13,14 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .introduction-container {
+        width: 90%;
+    }
+}
+
 @media (max-width: 768px) {
     .introduction-container {
-        width: 80%;
+        width: 90%;
     }
 }
