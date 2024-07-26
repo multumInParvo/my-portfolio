@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   .project-image {
@@ -58,11 +58,19 @@
 
   &:hover {
     .project-image {
-      transform: scale(1.05);
+      transform: scale(1.01);
     }
 
     .project-overlay {
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    .project-image {
+      min-height: 250px;
     }
   }
 }
