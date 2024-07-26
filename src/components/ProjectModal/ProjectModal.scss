@@ -1,96 +1,123 @@
 .modal-overlay {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1002;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.project-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgb(239, 238, 233);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1001;
+  transform: translateX(100%);
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .background {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: flex-end;
-    z-index: 1002;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  
-    &.open {
-      opacity: 1;
-      visibility: visible;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(120deg, #d6dadf, #e6e4d5f8, #f0e7ddf8);
+
+    .grid {
+      width: 100%;
+      height: 100%;
+      background-size: 100px 100px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.52) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.52) 1px, transparent 1px);
     }
   }
-  
-  .project-modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background-color: rgb(239, 238, 233);
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    overflow-y: auto;
-    z-index: 1001;
-    transform: translateX(100%);
-  
-    &.open {
-      transform: translateX(0);
-    }
-  
-    .modal-content {
-      padding: 20px;
-    }
-  
-    .close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 16px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-  
-    img {
-      border-radius: 8px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-    }
-  
-    .project-technologies {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 15px;
-    }
-  
-    .tech-tag {
-      background-color: #b4a6a6;
-      color: white;
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .tech-tag {
+    background-color: #b4a6a6;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: #2f2c2c;
       font-weight: 700;
-      padding: 5px 10px;
-      border-radius: 15px;
-      font-size: 0.8rem;
-    }
-  
-    .project-links {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  
-      a {
-        text-decoration: none;
-        color: #2f2c2c;
-        font-weight: 700;
-        font-size: 12px;
-        &:hover {
-          text-decoration: underline;
-        }
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
-  
-  @media (max-width: 768px) {
-    .project-modal {
-      width: 100%;
-    }
+}
+
+@media (max-width: 1024px) {
+  .project-modal {
+    width: 50%;
   }
+}
+
+@media (max-width: 768px) {
+  .project-modal {
+    width: 100%;
+  }
+}

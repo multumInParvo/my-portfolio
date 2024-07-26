@@ -35,6 +35,9 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
   return (
     <div className={`modal-overlay ${isAnimating ? 'open' : ''}`} onClick={onClose}>
       <div className={`project-modal ${isAnimating ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
+        <div className="background">
+          <div className="grid"></div>
+        </div>
         <div className="modal-content">
           <button className="close-button" onClick={onClose}>back to projects</button>
           {project && (
