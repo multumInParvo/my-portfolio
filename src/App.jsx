@@ -4,9 +4,8 @@ import '../src/styles/Global.scss';
 import React from 'react';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home/Home';
+import HomeAbout from './pages/HomeAbout/HomeAbout';
 import Projects from './pages/Projects/Projects';
-import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Cursor from './components/Cursor/Cursor';
 import Background from './components/Background/Background';
@@ -18,9 +17,8 @@ function App() {
       <Cursor />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeAbout />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
