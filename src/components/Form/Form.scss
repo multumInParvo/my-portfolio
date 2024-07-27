@@ -124,10 +124,21 @@
 
         .contact-info {
             margin-bottom: 0;
+
+            .contact-detail {
+                letter-spacing: 0;
+            }
+            .contact-detail-title {
+                font-size: 12px;
+            }
         }
 
         .form {
             .input-container {
+
+            .input-label {
+                font-size: 12px;
+            }
 
                 .input,
                 .textarea {
