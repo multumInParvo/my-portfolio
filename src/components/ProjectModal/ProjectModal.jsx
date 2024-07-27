@@ -39,23 +39,37 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
           <div className="grid"></div>
         </div>
         <div className="modal-content">
-          <button className="close-button" onClick={onClose}>back to projects</button>
+          <button className="close-button" onClick={onClose} aria-label="Close modal">
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
           {project && (
             <>
-              <h2>{project.title}</h2>
-              {project.picture && <img src={project.picture} alt={project.title} />}
-              {project.description && <p>{project.description}</p>}
-              {project.technologies && project.technologies.length > 0 && (
-                <div className="project-technologies">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-              )}
-              <div className="project-links">
-                <span>Website</span>
+
+              <h2 className='project-title'>{project.title}</h2>
+
+              {project.picture && <img className='project-image' src={project.picture} alt={project.title} />}
+
+              <div className='project-description-container'>
+                <h3 className='project-description-title'>About</h3>
+                {project.description && <p className='project-description'>{project.description}</p>}
+              </div>
+
+              <div className='project-technologies-container'>
+                <h3 className='project-technologies-title'>Technologies</h3>
+                {project.technologies && project.technologies.length > 0 && (
+                  <div className="project-technologies">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index} className="tech-tag">{tech}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="project-links-container">
+                <h3 className='project-link-title'>Website</h3>
                 {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
-                <span>GitHub</span>
+                <h3 className='project-link-title'>GitHub</h3>
                 {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>}
               </div>
             </>
