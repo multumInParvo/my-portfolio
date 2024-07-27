@@ -25,7 +25,7 @@
     },
     {
         "picture": "/images/sophie_bluel.webp",
-        "title": "Sophie Bluel architecte",
+        "title": "Sophie Bluel",
         "website": "",
         "github": "https://github.com/multumInParvo/OCP6_SophieBluelArchitecte.git",
         "description": "Ce projet consiste à développer une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API.",
