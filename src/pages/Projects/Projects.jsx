@@ -28,7 +28,7 @@ function Projects() {
           <title>Projects | Oleksandr Pryvalov</title>
         </Helmet>
         <div className="projects-container">
-          <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 1, 1100: 2 }}>
+          <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 1100: 2 }}>
             <Masonry gutter="20px">
               {projectsData.map((project, index) => (
                 <ProjectCard 

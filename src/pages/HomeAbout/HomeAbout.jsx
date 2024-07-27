@@ -7,13 +7,13 @@ import Introduction from '../../components/Introduction/Introduction';
 function HomeAbout() {
   return (
     <HelmetProvider>
-      <div className='home-about-container'>
+      <section className='home-about-container'>
         <h1 className='menu-section-title'>Home/About</h1>
         <Helmet>
           <title>Home & About | Oleksandr Pryvalov</title>
         </Helmet>
         <Introduction />
-      </div>
+      </section>
     </HelmetProvider>
   );
 }
