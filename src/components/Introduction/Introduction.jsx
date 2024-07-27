@@ -5,6 +5,7 @@ import '../Introduction/Introduction.scss';
 function Introduction() {
     return (
         <div className="introduction-container">
+            <h2 className='introduction-title'>I'm Oleksandr Pryvalov</h2>
             <div className='introduction-text'>
                 <p className='introduction-paragraph'>
                     A front-end developer with an interest in coding and art, appreciating minimalism in both fields.

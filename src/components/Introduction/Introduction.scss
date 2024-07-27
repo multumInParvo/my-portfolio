@@ -1,12 +1,19 @@
 .introduction-container {
     width: 60%;
 
+    .introduction-title {
+        margin-top: 0;
+        font-size: 2em;
+        color: #6d6d6d;
+        font-weight: 800;
+    }
+
     .introduction-text {
         margin: 0;
 
         .introduction-paragraph {
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 500;
             line-height: 2.2;
             margin: 15px 0 0 0;
         }
@@ -22,5 +29,15 @@
 @media (max-width: 768px) {
     .introduction-container {
         width: 90%;
+
+        .introduction-title {
+            font-size: 1.5em;
+        }
+
+        .introduction-text {    
+            .introduction-paragraph {
+                font-size: 14px;
+            }
+        }
     }
 }
