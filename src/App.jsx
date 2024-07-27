@@ -16,11 +16,13 @@ function App() {
       <Background />
       <Cursor />
       <Header />
-      <Routes>
-        <Route path="/" element={<HomeAbout />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomeAbout />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );
