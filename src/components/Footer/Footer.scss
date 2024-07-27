@@ -1,19 +1,18 @@
 @import '../../styles/Colors.scss';
 
 .footer {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: start;
-  padding: 50px 15% 30px 15%;
+  padding: 70px 20%;
   text-align: center;
 
   .footer-text {
-    color: #808080;
+    color: #6d6d6d;
     display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 1px;
-    font-size: 10px;
+    font-size: 14px;
     margin: 0;
 
     .footer-logo {
@@ -22,12 +21,19 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    width: 90%;
+    padding: 70px 5%;
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
-    justify-content: center;
+    padding: 50px 5% 20px;
 
     .footer-text {
-      flex-direction: column-reverse;
+      font-size: 12px;
 
       .footer-logo {
         display: flex;

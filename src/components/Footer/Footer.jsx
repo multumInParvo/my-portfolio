@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer">
             <div className='footer-text'>
                 <p className='footer-logo'>
-                    <span></span>
+                    <span>© 2024 by Oleksandr Pryvalov</span>
                 </p>
             </div>
         </div>
