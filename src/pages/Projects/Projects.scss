@@ -13,6 +13,35 @@
     color: rgb(0, 85, 142);
   }
 
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 60%;
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      background: #6d6d6d;
+      color: #ffffff;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background-color: rgb(30, 30, 33);
+        color: white;
+      }
+
+      &:hover {
+        background-color: #8d8e99;
+      }
+    }
+  }
+
   .projects-container {
     width: 60%;
   }
@@ -24,6 +53,8 @@
       font-size: 4rem;
       width: 90%;
     }
+
+    .filter-buttons,
     .projects-container {
       width: 90%;
     }
@@ -37,6 +68,23 @@
       font-size: 3rem;
       width: 90%;
     }
+
+    .filter-buttons {
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      button {
+        padding: 5px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 5px 3px;
+
+        &:hover {
+          background-color: rgb(30, 30, 33);
+        }
+      }
+    }
+
     .projects-container {
       width: 90%;
     }
