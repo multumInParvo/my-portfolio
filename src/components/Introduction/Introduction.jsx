@@ -23,7 +23,7 @@ function Introduction() {
                 </p>
                 <p className='introduction-paragraph'>
                     I'm finishing my training as a web integrator at OpenClassrooms, equipping myself with the fundamentals in front-end development.
-                    Take a look at my <Link to="/projects" className="projects-link">projects</Link> to see what I've worked on so far.
+                    Take a look at my <Link to="/projects" className="projects-link">projects</Link> to see what I've worked on so far, or check my <a href="/oleksandr_pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">résumé</a> for a complete overview.
                 </p>
             </div>
         </div>
