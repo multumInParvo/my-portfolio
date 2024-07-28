@@ -5,7 +5,8 @@
         "website": "https://argent-bank-roan.vercel.app",
         "github": "https://github.com/multumInParvo/ocp11_ArgentBank.git",
         "description": "Ce projet consiste en developper le front-end d'une application bancaire avec React et Redux.",
-        "technologies": ["React", "Redux", "Sass", "Swagger"]
+        "technologies": ["React", "Redux", "Sass", "Swagger"],
+        "filter": "projects"
     },
     {
         "picture": "/images/724_events.webp",
@@ -13,7 +14,8 @@
         "website": "https://ocp-10-724events.vercel.app",
         "github": "https://github.com/multumInParvo/OCP10_724events.git",
         "description": "Ce projet consiste à débugger et finaliser le développement d'un site web one-page.",
-        "technologies": ["React DevTools", "Chrome DevTools", "Debug"]
+        "technologies": ["React DevTools", "Chrome DevTools", "Debug"],
+        "filter": "projects"
     },
     {
         "picture": "/images/kasa.webp",
@@ -21,7 +23,8 @@
         "website": "https://kasareact-project-oleksandrs-projects-e99274ac.vercel.app",
         "github": "https://github.com/multumInParvo/OCP8_kasa_react.git",
         "description": "Ce projet consiste à développer le front-end d'une applicationen en utilisant React et React Router.",
-        "technologies": ["React", "CRA", "CSS"]
+        "technologies": ["React", "CRA", "CSS"],
+        "filter": "projects"
     },
     {
         "picture": "/images/sophie_bluel.webp",
@@ -29,7 +32,8 @@
         "website": "",
         "github": "https://github.com/multumInParvo/OCP6_SophieBluelArchitecte.git",
         "description": "Ce projet consiste à développer une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API.",
-        "technologies": ["HTML", "CSS", "JavaScript", "Swagger", "API"]
+        "technologies": ["HTML", "CSS", "JavaScript", "Swagger", "API"],
+        "filter": "formation"
     },
     {
         "picture": "/images/print_it.webp",
@@ -37,7 +41,8 @@
         "website": "https://multuminparvo.github.io/OCP5_print_it-/",
         "github": "https://github.com/multumInParvo/OCP5_print_it-.git",
         "description": "Ce projet consiste à dynamiser le site statique d'une imprimerie en créant un carrousel interactif avec JavaScript.",
-        "technologies": ["HTML", "CSS", "JavaScript"]
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "filter": "formation"
     },
     {
         "picture": "/images/ohmyfood.webp",
@@ -45,7 +50,8 @@
         "website": "https://multuminparvo.github.io/OCP4_ohmyfood/",
         "github": "https://github.com/multumInParvo/OCP4_ohmyfood.git",
         "description": "Ce projet consiste à développer l'interface mobile-first du site web d'une start-up.",
-        "technologies": ["HTML", "Sass", "Git", "GitHub"]
+        "technologies": ["HTML", "Sass", "Git", "GitHub"],
+        "filter": "tutorials"
     },
     {
         "picture": "/images/booki.webp",
@@ -53,7 +59,8 @@
         "website": "https://multuminparvo.github.io/ocp_3_booki/",
         "github": "https://github.com/multumInParvo/ocp_3_booki.git",
         "description": "Ce projet consiste à créer la page d'accueil d'une agence de voyage en HTML et CSS.",
-        "technologies": ["HTML", "CSS"]
+        "technologies": ["HTML", "CSS"],
+        "filter": "tutorials"
     },
     {
         "picture": "/images/riding_cities.webp",
@@ -61,6 +68,7 @@
         "website": "https://multuminparvo.github.io/OCP_2_riding_cities/",
         "github": "https://github.com/multumInParvo/OCP_2_riding_cities.git",
         "description": "Ce projet consiste à mettre à jour la page web d'une association en utilisant HTML, conformément aux maquettes fournies.",
-        "technologies": ["HTML", "CSS"]
+        "technologies": ["HTML", "CSS"],
+        "filter": "tutorials"
     }
 ]
