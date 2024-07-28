@@ -5,8 +5,8 @@ const Cursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isLargeScreen, setIsLargeScreen] = useState(false);
   
-  const outerSpringConfig = { damping: 30, stiffness: 150 };
-  const innerSpringConfig = { damping: 20, stiffness: 300 };
+  const outerSpringConfig = { damping: 30, stiffness: 200 };
+  const innerSpringConfig = { damping: 20, stiffness: 400 };
 
   const outerX = useSpring(0, outerSpringConfig);
   const outerY = useSpring(0, outerSpringConfig);
@@ -29,8 +29,8 @@ const Cursor = () => {
 
     const updateMousePosition = (ev) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
-      outerX.set(ev.clientX - 40);
-      outerY.set(ev.clientY - 40);
+      outerX.set(ev.clientX - 20);
+      outerY.set(ev.clientY - 20);
       innerX.set(ev.clientX - 3);
       innerY.set(ev.clientY - 3);
     };
@@ -51,8 +51,8 @@ const Cursor = () => {
           position: 'fixed',
           left: 0,
           top: 0,
-          width: 80,
-          height: 80,
+          width: 40,
+          height: 40,
           borderRadius: '50%',
           border: '1px solid grey',
           pointerEvents: 'none',
