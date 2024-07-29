@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import '../SlideOutMenu/SlideOutMenu.scss';
 
 function SlideOutMenu({ isOpen, onClose }) {
@@ -21,6 +22,7 @@ function SlideOutMenu({ isOpen, onClose }) {
                     </Link>
                     <Link to="/projects" className='menu-links' onClick={onClose}>PROJECTS</Link>
                     <Link to="/contact" className='menu-links' onClick={onClose}>CONTACT</Link>
+                    <LanguageSwitcher />
                 </nav>
             </div>
             {isOpen && <div className="overlay" onClick={onClose} aria-hidden="true"></div>}
