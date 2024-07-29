@@ -1,0 +1,14 @@
+{
+  "introduction": {
+    "title": "Je suis Oleksandr Pryvalov",
+    "paragraph1": "Un développeur front-end passionné par le code et l'art, appréciant la clarté dans ces deux domaines. Je recherche des projets où je peux appliquer ce que j'ai appris et continuer à développer mes compétences.",
+    "paragraph2": "Quand je ne code pas, j'aime créer des peintures à l'huile. Ces deux intérêts m'aident à équilibrer logique et créativité.",
+    "paragraph3": "Je termine ma formation d'intégrateur web chez OpenClassrooms, m'équipant des fondamentaux du développement front-end.",
+    "projectsLink": "projets",
+    "resumeLink": "CV"
+  },
+  "nav": {
+    "homeAbout": "Accueil/À propos",
+    "projects": "Projets"
+  }
+}
