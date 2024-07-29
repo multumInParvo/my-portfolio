@@ -31,6 +31,9 @@ function Projects() {
 
   return (
     <HelmetProvider>
+      <Helmet>
+        <title>Projects | Oleksandr Pryvalov</title>
+      </Helmet>
       <div className='projects'>
         <h1 className='menu-section-title'>Projects</h1>
         <div className="filter-buttons">
@@ -59,9 +62,6 @@ function Projects() {
             Projects
           </button>
         </div>
-        <Helmet>
-          <title>Projects | Oleksandr Pryvalov</title>
-        </Helmet>
         <div className="projects-container">
           <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 1100: 2 }}>
             <Masonry gutter="20px">
