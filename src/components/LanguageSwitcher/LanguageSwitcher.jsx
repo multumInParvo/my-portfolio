@@ -1,5 +1,3 @@
-// src/components/LanguageSwitcher/LanguageSwitcher.jsx
-
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
 import './LanguageSwitcher.scss';
