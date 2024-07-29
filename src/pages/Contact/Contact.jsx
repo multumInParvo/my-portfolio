@@ -7,11 +7,11 @@ import '../Contact/Contact.scss';
 function Contact() {
     return (
         <HelmetProvider>
+            <Helmet>
+                <title>Contact | oleksandr pryvalov</title>
+            </Helmet>
             <div className='contact-form-container'>
                 <h1 className='menu-section-title'>Contact</h1>
-                <Helmet>
-                    <title>Contact | oleksandr pryvalov</title>
-                </Helmet>
                 <Form />
             </div>
         </HelmetProvider>
