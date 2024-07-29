@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import SlideOutMenu from '../SlideOutMenu/SlideOutMenu';
 import '../Header/Header.scss';
 
@@ -16,6 +17,7 @@ function Header() {
                     <span className="visually-hidden">Home</span>
                 </Link>
                 <div className="menu">
+                <LanguageSwitcher />
                     <Link to="/projects" className='menu-links'>PROJECTS</Link>
                     <Link to="/contact" className='menu-links'>CONTACT</Link>
                 </div>
