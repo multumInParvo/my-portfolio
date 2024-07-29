@@ -1,0 +1,15 @@
+// src/components/LanguageSwitcher/LanguageSwitcher.scss
+
+.language-switcher {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: none;
+    }
+  }
