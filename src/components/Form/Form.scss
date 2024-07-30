@@ -68,6 +68,7 @@
                 resize: none;
 
                 &::placeholder {
+                    padding-left: 15px;
                     color: rgba(0, 0, 0, 0.5);
                 }
 
@@ -79,6 +80,17 @@
 
             .textarea {
                 height: 150px;
+
+                &::placeholder {
+                    padding-top: 15px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                &:focus {
+
+                    background-color: rgba(0, 85, 142, 0.1);
+                    outline: none;
+                }
             }
         }
 
