@@ -12,8 +12,30 @@
     "paragraph3": "I'm finishing my training as a web integrator at OpenClassrooms, equipping myself with the fundamentals in front-end development. Take a look at my {projects} to see what I've worked on so far, or check my {CV} for a complete overview.",
     "projectsLink": "projects"
   },
-  "nav": {
-    "homeAbout": "Home/About",
+  "form": {
+    "contactInvitation": "Ask me anything here or send an email directly to",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "messagePlaceholder": "Type your message here",
+    "send": "Send"
+  },
+  "filter": {
+    "all": "All",
+    "tutorials": "Tutorials",
     "projects": "Projects"
+  },
+  "projectModal": {
+    "about": "About"
+  },
+  "projectDescriptions": {
+    "argent_bank_description": "This project involves developing the front-end of a banking application with React and Redux.",
+    "724events_description": "This project involves debugging and finalizing the development of a one-page website.",
+    "kasa_description": "This project involves developing the front-end of an application using React and React Router.",
+    "sophie_bluel_description": "This project involves developing a dynamic web page for an interior architect using JavaScript and an API.",
+    "print_it_description": "This project involves enhancing a static printing company website by creating an interactive carousel with JavaScript.",
+    "ohmyfood_description": "This project involves developing a mobile-first interface for a startup's website.",
+    "booki_description": "This project involves creating the homepage of a travel agency using HTML and CSS.",
+    "riding_cities_description": "This project involves updating an association's web page using HTML, in accordance with the provided mockups."
   }
 }
