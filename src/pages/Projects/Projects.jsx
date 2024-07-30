@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import projectsData from '../../data/projects-data.json';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
@@ -7,6 +8,9 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import './Projects.scss';
 
 function Projects() {
+  const { language, translations } = useContext(LanguageContext);
+  const t = translations[language].filter;
+
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('all');
@@ -41,25 +45,25 @@ function Projects() {
             className={activeFilter === 'all' ? 'active' : ''}
             onClick={() => handleFilterClick('all')}
           >
-            All
+            {t.all}
           </button>
           <button
-            className={activeFilter === 'formation' ? 'active' : ''}
-            onClick={() => handleFilterClick('formation')}
+            className={activeFilter === 'OpenClassrooms' ? 'active' : ''}
+            onClick={() => handleFilterClick('OpenClassrooms')}
           >
-            Formation
+            OpenClassrooms
           </button>
           <button
             className={activeFilter === 'tutorials' ? 'active' : ''}
             onClick={() => handleFilterClick('tutorials')}
           >
-            Tutorials
+            {t.tutorials}
           </button>
           <button
             className={activeFilter === 'projects' ? 'active' : ''}
             onClick={() => handleFilterClick('projects')}
           >
-            Projects
+            {t.projects}
           </button>
         </div>
         <div className="projects-container">
