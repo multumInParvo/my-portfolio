@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
 import './ProjectModal.scss';
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
+  const { language, translations } = useContext(LanguageContext);
+  const t = translations[language].projectModal;
+
   const [isRendered, setIsRendered] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -51,8 +55,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               {project.picture && <img className='project-image' src={project.picture} alt={project.title} />}
 
               <div className='project-description-container'>
-                <h3 className='project-description-title'>About</h3>
-                {project.description && <p className='project-description'>{project.description}</p>}
+                <h3 className='project-description-title'>{t.about}</h3>
+                {project.description && <p className='project-description'>{translations[language].projectDescriptions[project.description]}</p>}
               </div>
 
               <div className='project-technologies-container'>
