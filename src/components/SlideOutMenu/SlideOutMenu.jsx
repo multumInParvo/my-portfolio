@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
+import { LanguageContext } from '../../context/LanguageContext';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import '../SlideOutMenu/SlideOutMenu.scss';
 
 function SlideOutMenu({ isOpen, onClose }) {
+    const { language, translations } = useContext(LanguageContext);
+    const t = translations[language].slideOutMenu;
+
     return (
         <>
             <div
@@ -20,9 +24,9 @@ function SlideOutMenu({ isOpen, onClose }) {
                         <span className='asterisk-symbol' aria-hidden="true">✣</span>
                         <span className="visually-hidden">Home</span>
                     </Link>
-                    <Link to="/projects" className='menu-links' onClick={onClose}>PROJECTS</Link>
+                    <Link to="/projects" className='menu-links' onClick={onClose}>{t.projects}</Link>
                     <Link to="/contact" className='menu-links' onClick={onClose}>CONTACT</Link>
-                    <LanguageSwitcher />
+                    <LanguageSwitcher onClick={onClose}/>
                 </nav>
             </div>
             {isOpen && <div className="overlay" onClick={onClose} aria-hidden="true"></div>}
