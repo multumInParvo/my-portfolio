@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { LanguageContext } from '../../context/LanguageContext';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import SlideOutMenu from '../SlideOutMenu/SlideOutMenu';
 import '../Header/Header.scss';
 
 function Header() {
+    const { language, translations } = useContext(LanguageContext);
+    const t = translations[language].header;
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -18,7 +22,7 @@ function Header() {
                 </Link>
                 <div className="menu">
                 <LanguageSwitcher />
-                    <Link to="/projects" className='menu-links'>PROJECTS</Link>
+                    <Link to="/projects" className='menu-links'>{t.projects}</Link>
                     <Link to="/contact" className='menu-links'>CONTACT</Link>
                 </div>
                 <button
