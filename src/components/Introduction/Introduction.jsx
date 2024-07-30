@@ -24,8 +24,11 @@ function Introduction() {
                 {t.paragraph2}
                 </p>
                 <p className='introduction-paragraph'>
-                    I'm finishing my training as a web integrator at OpenClassrooms, equipping myself with the fundamentals in front-end development.
-                    Take a look at my <Link to="/projects" className="projects-link">projects</Link> to see what I've worked on so far, or check my <a href="/oleksandr_pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">résumé</a> for a complete overview.
+                {t.paragraph3.split('{projects}')[0]}
+                <Link to="/projects" className="projects-link">{t.projectsLink}</Link>
+                {t.paragraph3.split('{projects}')[1].split('{CV}')[0]}
+                <a href="/oleksandr_pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="cv-link">CV</a>
+                {t.paragraph3.split('{CV}')[1]}
                 </p>
             </div>
         </div>
