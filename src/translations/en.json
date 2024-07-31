@@ -2,6 +2,9 @@
   "header": {
     "projects": "PROJECTS"
   },
+  "homeAbout": {
+    "title": "Home/About"
+  },
   "slideOutMenu": {
     "projects": "PROJECTS"
   },
@@ -36,6 +39,7 @@
     "print_it_description": "This project involves enhancing a static printing company website by creating an interactive carousel with JavaScript.",
     "ohmyfood_description": "This project involves developing a mobile-first interface for a startup's website.",
     "booki_description": "This project involves creating the homepage of a travel agency using HTML and CSS.",
-    "riding_cities_description": "This project involves updating an association's web page using HTML, in accordance with the provided mockups."
+    "riding_cities_description": "This project involves updating an association's web page using HTML, in accordance with the provided mockups.",
+    "art_portfolio_description": "A portfolio showcasing my art. This project taught me the importance of wireframing before starting to code. I'm currently designing a new portfolio."
   }
 }
