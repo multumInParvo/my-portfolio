@@ -1,5 +1,7 @@
+// Cursor.js
 import React, { useEffect, useState } from 'react';
 import { motion, useSpring } from 'framer-motion';
+import '../Cursor/Cursor.scss'; 
 
 const Cursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -47,31 +49,15 @@ const Cursor = () => {
   return (
     <>
       <motion.div
+        className="outer-cursor"
         style={{
-          position: 'fixed',
-          left: 0,
-          top: 0,
-          width: 40,
-          height: 40,
-          borderRadius: '50%',
-          border: '1px solid grey',
-          pointerEvents: 'none',
-          zIndex: 9998,
           x: outerX,
           y: outerY,
         }}
       />
       <motion.div
+        className="inner-cursor"
         style={{
-          position: 'fixed',
-          left: 0,
-          top: 0,
-          width: 6,
-          height: 6,
-          borderRadius: '50%',
-          backgroundColor: 'grey',
-          pointerEvents: 'none',
-          zIndex: 9999,
           x: innerX,
           y: innerY,
         }}
