@@ -1,0 +1,37 @@
+// Theme.scss
+@import 'Global.scss';
+
+:root {
+  // Background and grid variables
+    --bg-gradient-light: linear-gradient(120deg, #e9ead7, #e6e4d5f8, #fffffff8);
+    --grid-color-light: rgba(255, 255, 255, 0.52);
+    
+    --bg-gradient-dark: linear-gradient(160deg, #2c3e50, #315273, #484d67);
+    --grid-color-dark: rgba(206, 115, 115, 0.1);
+    
+    --bg-gradient: var(--bg-gradient-light);
+    --grid-color: var(--grid-color-light);
+
+    // Global variables
+    --main-text-color: #6d6262;
+    --text-links: rgb(68, 70, 72);
+    --bg-letters: rgb(0, 85, 142);
+    --cursor-color: rgb(103, 95, 95);
+    --inputs-color: rgba(0, 85, 142, 0.1);
+    --hover-toggle-btn: #6d6262;
+    --hover-toggle-text: #fff;
+    --hover-menu-links: rgba(126, 110, 110, 0.967);
+  }
+  
+  [data-theme='dark'] {
+    --bg-gradient: var(--bg-gradient-dark);
+    --grid-color: var(--grid-color-dark);
+    --main-text-color: #d5c7c7;
+    --text-links: rgb(209, 226, 249);
+    --bg-letters: rgb(208, 218, 224);
+    --cursor-color: rgb(159, 196, 196);
+    --inputs-color: rgba(180, 180, 180, 0.479);
+    --hover-toggle-btn: #d5c7c7;
+    --hover-toggle-text: #333030;
+    --hover-menu-links: rgb(255, 255, 255);
+  }
