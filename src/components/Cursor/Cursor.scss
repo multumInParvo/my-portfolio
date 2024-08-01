@@ -1,0 +1,25 @@
+@import '../../styles/Global.scss';
+
+.outer-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--cursor-color);
+    pointer-events: none;
+    z-index: 9998;
+  }
+  
+  .inner-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--cursor-color);
+    pointer-events: none;
+    z-index: 9999;
+  }
