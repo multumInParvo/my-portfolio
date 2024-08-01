@@ -5,8 +5,12 @@
   "homeAbout": {
     "title": "Home/About"
   },
+  "projects": {
+    "title": "Projects"
+  },
   "slideOutMenu": {
-    "projects": "PROJECTS"
+    "projects": "PROJECTS",
+    "home": "HOME"
   },
   "introduction": {
     "title": "I'm Oleksandr Pryvalov",
