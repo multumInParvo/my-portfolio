@@ -4,6 +4,7 @@
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
   .project-image {
     width: 100%;
@@ -28,6 +29,7 @@
     transition: opacity 0.6s ease;
     padding: 40px 20px;
     text-align: center;
+    cursor: pointer;
   }
 
   .project-title {
