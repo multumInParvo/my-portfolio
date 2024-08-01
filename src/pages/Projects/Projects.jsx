@@ -10,6 +10,7 @@ import './Projects.scss';
 function Projects() {
   const { language, translations } = useContext(LanguageContext);
   const t = translations[language].filter;
+  const tp = translations[language].projects;
 
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,7 +40,7 @@ function Projects() {
         <title>Projects | Oleksandr Pryvalov</title>
       </Helmet>
       <div className='projects'>
-        <h1 className='menu-section-title'>Projects</h1>
+        <h1 className='menu-section-title'>{tp.title}</h1>
         <div className="filter-buttons">
           <button
             className={activeFilter === 'all' ? 'active' : ''}
