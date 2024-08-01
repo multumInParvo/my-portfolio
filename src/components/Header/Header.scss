@@ -1,4 +1,4 @@
-@import '../../styles/Colors.scss';
+@import '../../styles/Global.scss';
 
 nav {
   display: flex;
@@ -14,7 +14,7 @@ nav {
     display: flex;
     align-items: center;
     font-size: 50px;
-    color: #6d6262;
+    color: var(--main-text-color);
   }
 
   .visually-hidden {
@@ -38,14 +38,21 @@ nav {
   gap: 50px;
 
   .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
     font-size: 14px;
     letter-spacing: 5px;
-    color: #6d6262;
+    color: var(--main-text-color);
     text-decoration: none;
-    transition: color 1000ms;
+    border: solid 1px rgba(126, 110, 110, 0);
+    transition: border 1500ms;
 
     &:hover {
-      color: $menu-color;
+      border: solid 1px var(--hover-menu-links);
     }
   }
 }
@@ -97,7 +104,7 @@ nav {
       .bar {
         width: 100%;
         height: 2px;
-        background-color: #808080;
+        background-color: var(--main-text-color);
         position: absolute;
         transition: all 0.4s;
       }

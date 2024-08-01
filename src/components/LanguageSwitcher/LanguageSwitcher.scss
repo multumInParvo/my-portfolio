@@ -1,8 +1,10 @@
+@import '../../styles/Global.scss';
+
 .language-switcher {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
-  color: #6d6262;
+  color: var(--main-text-color);
   height: 40px;
   width: 40px;
   padding: 0;
@@ -11,11 +13,12 @@
   background-color: none;
   background: none;
   cursor: pointer;
-  transition: background-color 1000ms ease;
+  transition: background-color 1500ms ease;
 
   &:hover {
-    color: #fff;
-    background-color: #6d6262;
+    color: var(--hover-toggle-text);
+    font-weight: 800;
+    background-color: var(--hover-toggle-btn);
     opacity: 0.5;
   }
 }

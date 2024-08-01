@@ -1,3 +1,5 @@
+@import '../../styles/Global.scss';
+
 .introduction-container {
     width: 60%;
 
@@ -10,8 +12,9 @@
             align-items: center;
             margin: 0;
             font-size: 3vw;
-            color: #6d6d6d;
+            color: var(--main-text-color);
             font-weight: 800;
+            cursor: default;
         }
 
         .avatar-container {
@@ -34,14 +37,16 @@
         margin: 0;
 
         .introduction-paragraph {
+            color: var(--main-text-color);
             font-size: 16px;
             font-weight: 500;
             line-height: 2.2;
             margin: 15px 0 0 0;
+            cursor: default;
 
             .projects-link,
             .cv-link {
-                color: black;
+                color: var(--text-links);
                 text-decoration: none;
                 font-weight: 900;
                 position: relative;
@@ -49,7 +54,7 @@
 
                 &::after {
                     content: '';
-                    background-color: black;
+                    background-color: var(--text-links);
                     position: absolute;
                     width: 0;
                     height: 2px;
