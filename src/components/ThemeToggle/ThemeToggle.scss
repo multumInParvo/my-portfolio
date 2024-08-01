@@ -1,0 +1,18 @@
+@import '../../styles/Global.scss';
+
+.theme-toggle {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border: 1px solid;
+  color: var(--main-text-color);
+  background: none;
+  cursor: pointer;
+  transition: background-color 1500ms ease;
+
+  &:hover {
+    background-color: var(--hover-toggle-btn);
+    opacity: 0.5;
+  }
+}
