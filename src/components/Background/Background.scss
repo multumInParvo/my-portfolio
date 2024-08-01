@@ -6,7 +6,8 @@
     height: 100vh;
     z-index: -1;
     overflow: hidden;
-    background: linear-gradient(120deg, #d6dadf, #e6e4d5f8, #fffffff8);
+    background: var(--bg-gradient);
+    transition: background-color 0.3s ease, background-image 0.3s ease;
 }
 
 .grid {
@@ -14,6 +15,6 @@
     height: 100%;
     background-size: 100px 100px;
     background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.52) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.52) 1px, transparent 1px);
+        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
 }
