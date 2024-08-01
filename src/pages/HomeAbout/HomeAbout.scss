@@ -1,25 +1,47 @@
+@import '../../styles/Global.scss';
+
 .home-about-container {
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 60vh;
+    position: relative;
+    padding: 0;
 
     .menu-section-title {
+        cursor: default;
+        position: absolute;
         opacity: 0.1;
         width: 60%;
-        font-size: 6rem;
-        margin: 0 0 50px;
+        font-size: 12rem;
+        margin: 0;
         font-weight: 900;
+        color: var(--bg-letters);
+        overflow-wrap: break-word;
+        word-break: break-all;
         text-align: start;
-        color: rgb(0, 85, 142);
+        line-height: 1;
+    }
+     
+    .introduction-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin-top: 100px;
     }
 }
 
 @media (max-width: 1024px) {
     .home-about-container {
         .menu-section-title {
-            font-size: 4rem;
+            font-size: 11rem;
             width: 90%;
+        }
+        .introduction-wrapper {
+            margin-top: 50px;
         }
     }
 }
@@ -28,8 +50,11 @@
     .home-about-container {
         .menu-section-title {
             margin: 0 0 20px;
-            font-size: 2.5rem;
+            font-size: 9rem;
             width: 90%;
+        }
+        .introduction-wrapper {
+            margin-top: 0;
         }
     }
 }
