@@ -1,15 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// Variables default
+$main-text-color: #6d6262;
+$text-links: rgb(68, 70, 72);
+$bg-letters: rgb(0, 85, 142);
+$cursor-color: rgb(103, 95, 95);
+$inputs-color: rgba(0, 85, 142, 0.1);
+$hover-toggle-btn: #6d6262;
+$hover-toggle-text: #fff;
+$hover-menu-links: rgba(126, 110, 110, 0.967);
 
+// Typography
+$font-family-main: 'Montserrat', sans-serif;
+
+// Reset
 * {
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100%;
+  font-family: $font-family-main;
+  min-height: 100vh;
   margin: 0;
 }
 
 html {
+  overflow-y: scroll;
   width: 100%;
   height: 100%;
 }
+
