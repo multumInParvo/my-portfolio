@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useContext } from 'react';
+import { useTheme } from '../../context/ThemeContext';
 import { LanguageContext } from '../../context/LanguageContext';
 import './ProjectModal.scss';
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
+  useTheme();
   const { language, translations } = useContext(LanguageContext);
   const t = translations[language].projectModal;
 
