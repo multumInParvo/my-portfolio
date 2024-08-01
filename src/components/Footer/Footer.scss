@@ -1,10 +1,10 @@
 @import '../../styles/Global.scss';
 
 .footer {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: start;
-  padding: 70px 20%;
+  padding: 90px 20%;
   text-align: center;
 
   .social-links {
@@ -25,8 +25,8 @@
 
 @media (max-width: 1024px) {
   .footer {
-    width: 90%;
-    padding: 70px 5%;
+    width: 100%;
+    padding: 70px 5% 50px;
   }
 }
 
