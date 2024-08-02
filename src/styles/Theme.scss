@@ -21,6 +21,8 @@
     --hover-toggle-btn: #6d6262;
     --hover-toggle-text: #fff;
     --hover-menu-links: rgba(126, 110, 110, 0.967);
+    --bg-btn-filter: linear-gradient(45deg, #5a6d85, #84a8c9);
+    --border-btn-filter: black;
   }
   
   [data-theme='dark'] {
@@ -34,4 +36,6 @@
     --hover-toggle-btn: #d5c7c7;
     --hover-toggle-text: #333030;
     --hover-menu-links: rgb(255, 255, 255);
+    --bg-btn-filter: linear-gradient(270deg, #3d54b0, #239584);
+    --border-btn-filter: white;
   }

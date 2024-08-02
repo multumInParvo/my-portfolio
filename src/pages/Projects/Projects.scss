@@ -24,23 +24,23 @@
 
     button {
       padding: 10px 20px;
+      letter-spacing: 1px;
       font-size: 14px;
       font-weight: 600;
-      background: #6d6d6d;
+      border-radius: 5px;
+      background: var(--bg-btn-filter);
       color: #ffffff;
-      border-radius: 8px;
       border: none;
       cursor: pointer;
       margin: 0 10px;
-      transition: background-color 0.3s ease;
+      transition: opacity 0.6s ease;
 
       &.active {
-        background-color: rgb(30, 30, 33);
-        color: white;
+        box-shadow: inset 0 0 0 1px var(--border-btn-filter);
       }
 
       &:hover {
-        background-color: #8d8e99;
+        opacity: 0.6;
       }
     }
   }
