@@ -1,6 +1,7 @@
 // App //
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import React from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { LanguageProvider } from './context/LanguageContext';
 import { ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header/Header';
@@ -14,6 +15,8 @@ import './styles/Theme.scss'
 import '../src/styles/Global.scss';
 
 function App() {
+  const location = useLocation();
+
   return (
     <LanguageProvider>
       <ThemeProvider>
@@ -22,11 +25,19 @@ function App() {
           <Cursor />
           <Header />
           <main>
-            <Routes>
-              <Route path="/" element={<HomeAbout />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <TransitionGroup>
+              <CSSTransition
+                key={location.pathname}
+                classNames="fade"
+                timeout={300}
+              >
+                <Routes location={location}>
+                  <Route path="/" element={<HomeAbout />} />
+                  <Route path="/projects" element={<Projects />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </CSSTransition>
+            </TransitionGroup>
           </main>
           <Footer />
         </div>
