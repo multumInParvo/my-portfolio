@@ -46,11 +46,19 @@
 
             .projects-link,
             .cv-link {
-                color: var(--text-links);
+                color: transparent;
+                background-image: linear-gradient(to right,
+                        var(--text-links) 0%,
+                        #8150b6 50%,
+                        var(--text-links) 100%);
+                background-size: 200% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
                 text-decoration: none;
                 font-weight: 900;
                 position: relative;
                 display: inline-block;
+                animation: gradientSlide 6s linear infinite;
 
                 &::after {
                     content: '';
@@ -60,14 +68,30 @@
                     height: 2px;
                     bottom: 1px;
                     left: 0;
-                    transition: width 0.3s ease;
+                    transition: width 1000ms ease;
                 }
 
-                &:hover::after {
-                    width: 100%;
+                &:hover {
+                    animation: none;
+                    color: var(--text-links);
+                    background-image: none;
+
+                    &::after {
+                        width: 100%;
+                    }
                 }
             }
         }
+    }
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
     }
 }
 
