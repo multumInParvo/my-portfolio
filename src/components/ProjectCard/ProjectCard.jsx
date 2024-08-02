@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import './ProjectCard.scss';
 
 const ProjectCard = ({ project, onClick }) => {
@@ -8,7 +10,14 @@ const ProjectCard = ({ project, onClick }) => {
 
   return (
     <div className="project-card" onClick={() => onClick(project)}>
-      <img src={project.picture} alt={project.title} className="project-image" />
+      <LazyLoadImage
+        src={project.picture}
+        alt={project.title}
+        effect="blur"
+        className="project-image"
+        width="100%"
+        height="auto"
+      />
       <div className="project-overlay">
         <h3 className="project-title">{project.title}</h3>
         <p className="project-description">{translations[language].projectDescriptions[project.description]}</p>
