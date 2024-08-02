@@ -105,11 +105,17 @@
                 padding: 10px 20px;
                 font-size: 14px;
                 font-weight: 600;
-                background: #6d6d6d;
+                background: var(--bg-btn-filter);
                 color: #ffffff;
                 border-radius: 8px;
                 border: none;
                 cursor: pointer;
+                transition: opacity 0.6s ease;
+            
+                  &:hover {
+                    opacity: 0.6;
+                    box-shadow: inset 0 0 0 1px var(--border-btn-filter);
+                  }
             }
         }
     }
