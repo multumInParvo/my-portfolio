@@ -15,9 +15,9 @@ function Footer() {
                     <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
                 </a>
             </div>
+            <p className='footer-text'>© 2024 by Oleksandr Pryvalov</p>
         </div>
     );
 }
 
-export default Footer; 
-
+export default Footer;
