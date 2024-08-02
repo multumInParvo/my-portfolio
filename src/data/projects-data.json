@@ -1,5 +1,14 @@
 [
     {
+        "picture": "/images/portfolio.webp",
+        "title": "Portfolio",
+        "website": "https://oleksandrpryvalov.tech/",
+        "github": "https://github.com/multumInParvo/my-portfolio.git",
+        "description": "portfolio_description",
+        "technologies": ["React", "Sass", "HTML", "Email.js"],
+        "filter": "projects"
+    },
+    {
         "picture": "/images/art_portfolio.webp",
         "title": "Oleksandr Pryvalov",
         "website": "https://oleksandrpryvalov.com/",
