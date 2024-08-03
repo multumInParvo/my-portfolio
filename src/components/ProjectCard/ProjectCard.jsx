@@ -1,17 +1,23 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
+import { useTheme } from '../../context/ThemeContext';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './ProjectCard.scss';
 
 const ProjectCard = ({ project, onClick }) => {
   const { language, translations } = useContext(LanguageContext);
+  const { theme } = useTheme();
   const t = translations[language].projectCard;
+
+  const imageSrc = typeof project.picture === 'object'
+    ? (theme === 'light' ? project.picture.light : project.picture.dark)
+    : project.picture;
 
   return (
     <div className="project-card" onClick={() => onClick(project)}>
       <LazyLoadImage
-        src={project.picture}
+        src={imageSrc}
         alt={project.title}
         effect="blur"
         className="project-image"
