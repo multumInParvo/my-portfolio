@@ -51,9 +51,23 @@
         "github": "https://github.com/multumInParvo/OCP10_724events.git",
         "description": "724events_description",
         "technologies": [
-            "React DevTools",
+            "React",
             "Chrome DevTools",
             "Debug"
+        ],
+        "filter": "OpenClassrooms"
+    },
+    {
+        "picture": "/images/nina_carducci.webp",
+        "title": "Nina Carducci",
+        "website": "https://multuminparvo.github.io/OCP9_Nina_Carducci/",
+        "github": "https://github.com/multumInParvo/OCP9_Nina_Carducci.git",
+        "description": "nina_carducci_description",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "SEO"
         ],
         "filter": "OpenClassrooms"
     },
@@ -65,8 +79,8 @@
         "description": "kasa_description",
         "technologies": [
             "React",
-            "CRA",
-            "CSS"
+            "CSS",
+            "Figma"
         ],
         "filter": "OpenClassrooms"
     },
@@ -80,6 +94,7 @@
             "HTML",
             "CSS",
             "JavaScript",
+            "Figma",
             "Swagger",
             "API"
         ],
@@ -107,6 +122,7 @@
         "technologies": [
             "HTML",
             "Sass",
+            "Figma",
             "Git",
             "GitHub"
         ],
@@ -120,6 +136,7 @@
         "description": "booki_description",
         "technologies": [
             "HTML",
+            "Figma",
             "CSS"
         ],
         "filter": "OpenClassrooms"
