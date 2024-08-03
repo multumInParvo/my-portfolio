@@ -1,11 +1,19 @@
 [
     {
-        "picture": "/images/portfolio.webp",
+        "picture": {
+            "dark": "/images/portfolio-light.webp",
+            "light": "/images/portfolio-dark.webp"
+        },
         "title": "Portfolio",
         "website": "https://oleksandrpryvalov.tech/",
         "github": "https://github.com/multumInParvo/my-portfolio.git",
         "description": "portfolio_description",
-        "technologies": ["React", "Sass", "HTML", "Email.js"],
+        "technologies": [
+            "React",
+            "Sass",
+            "HTML",
+            "Email.js"
+        ],
         "filter": "projects"
     },
     {
@@ -14,7 +22,12 @@
         "website": "https://oleksandrpryvalov.com/",
         "github": "https://github.com/multumInParvo/oleksandr_pryvalov.git",
         "description": "art_portfolio_description",
-        "technologies": ["React", "Sass", "HTML", "Email.js"],
+        "technologies": [
+            "React",
+            "Sass",
+            "HTML",
+            "Email.js"
+        ],
         "filter": "projects"
     },
     {
@@ -23,7 +36,12 @@
         "website": "https://argent-bank-roan.vercel.app",
         "github": "https://github.com/multumInParvo/ocp11_ArgentBank.git",
         "description": "argent_bank_description",
-        "technologies": ["React", "Redux", "Sass", "Swagger"],
+        "technologies": [
+            "React",
+            "Redux",
+            "Sass",
+            "Swagger"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -32,7 +50,11 @@
         "website": "https://ocp-10-724events.vercel.app",
         "github": "https://github.com/multumInParvo/OCP10_724events.git",
         "description": "724events_description",
-        "technologies": ["React DevTools", "Chrome DevTools", "Debug"],
+        "technologies": [
+            "React DevTools",
+            "Chrome DevTools",
+            "Debug"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -41,7 +63,11 @@
         "website": "https://kasareact-project-oleksandrs-projects-e99274ac.vercel.app",
         "github": "https://github.com/multumInParvo/OCP8_kasa_react.git",
         "description": "kasa_description",
-        "technologies": ["React", "CRA", "CSS"],
+        "technologies": [
+            "React",
+            "CRA",
+            "CSS"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -50,7 +76,13 @@
         "website": "",
         "github": "https://github.com/multumInParvo/OCP6_SophieBluelArchitecte.git",
         "description": "sophie_bluel_description",
-        "technologies": ["HTML", "CSS", "JavaScript", "Swagger", "API"],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Swagger",
+            "API"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -59,7 +91,11 @@
         "website": "https://multuminparvo.github.io/OCP5_print_it-/",
         "github": "https://github.com/multumInParvo/OCP5_print_it-.git",
         "description": "print_it_description",
-        "technologies": ["HTML", "CSS", "JavaScript"],
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -68,7 +104,12 @@
         "website": "https://multuminparvo.github.io/OCP4_ohmyfood/",
         "github": "https://github.com/multumInParvo/OCP4_ohmyfood.git",
         "description": "ohmyfood_description",
-        "technologies": ["HTML", "Sass", "Git", "GitHub"],
+        "technologies": [
+            "HTML",
+            "Sass",
+            "Git",
+            "GitHub"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -77,7 +118,10 @@
         "website": "https://multuminparvo.github.io/ocp_3_booki/",
         "github": "https://github.com/multumInParvo/ocp_3_booki.git",
         "description": "booki_description",
-        "technologies": ["HTML", "CSS"],
+        "technologies": [
+            "HTML",
+            "CSS"
+        ],
         "filter": "OpenClassrooms"
     },
     {
@@ -86,7 +130,10 @@
         "website": "https://multuminparvo.github.io/OCP_2_riding_cities/",
         "github": "https://github.com/multumInParvo/OCP_2_riding_cities.git",
         "description": "riding_cities_description",
-        "technologies": ["HTML", "CSS"],
+        "technologies": [
+            "HTML",
+            "CSS"
+        ],
         "filter": "OpenClassrooms"
     }
 ]
