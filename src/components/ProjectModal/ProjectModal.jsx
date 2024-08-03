@@ -4,7 +4,7 @@ import { LanguageContext } from '../../context/LanguageContext';
 import './ProjectModal.scss';
 
 const ProjectModal = ({ project, isOpen, onClose }) => {
-  useTheme();
+  const { theme } = useTheme();
   const { language, translations } = useContext(LanguageContext);
   const t = translations[language].projectModal;
 
@@ -38,6 +38,10 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
   if (!isRendered) return null;
 
+  const imageSrc = project && typeof project.picture === 'object' 
+  ? (theme === 'light' ? project.picture.light : project.picture.dark)
+  : (project ? project.picture : null);
+
   return (
     <div className={`modal-overlay ${isAnimating ? 'open' : ''}`} onClick={onClose}>
       <div className={`project-modal ${isAnimating ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
@@ -54,7 +58,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
               <h2 className='project-title'>{project.title}</h2>
 
-              {project.picture && <img className='project-image' src={project.picture} alt={project.title} />}
+              {imageSrc && <img className='project-image' src={imageSrc} alt={project.title} />}
 
               <div className='project-description-container'>
                 <h3 className='project-description-title'>{t.about}</h3>
