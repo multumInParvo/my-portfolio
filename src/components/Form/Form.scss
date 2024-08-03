@@ -49,9 +49,9 @@
 
             .input,
             .textarea {
+                padding-left: 15px;
                 height: 40px;
                 width: 70%;
-                padding: 0;
                 border: none;
                 background-color: var(--inputs-color);
                 color: var(--text-links);
@@ -59,7 +59,6 @@
 
                 &::placeholder {
                     font-size: 14px;
-                    padding-left: 15px;
                     color: var(--links-color);
                 }
 
@@ -70,10 +69,10 @@
             }
 
             .textarea {
+                padding-top: 15px;
                 height: 150px;
 
                 &::placeholder {
-                    padding-top: 15px;
                     color: var(--links-color);
                 }
 
