@@ -33,18 +33,21 @@
     cursor: pointer;
 
     .project-title {
+      pointer-events: none;
       color: #fff;
       font-size: 1.5rem;
       margin: 0;
     }
   
     .project-description {
+      pointer-events: none;
       text-align: start;
       color: #fff;
       font-size: 1rem;
     }
   
     .project-technologies {
+      pointer-events: none;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
