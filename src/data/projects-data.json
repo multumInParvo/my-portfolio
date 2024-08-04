@@ -19,7 +19,7 @@
     {
         "picture": "/images/art_portfolio.webp",
         "title": "Oleksandr Pryvalov",
-        "website": "https://oleksandrpryvalov.com/",
+        "website": "https://oleksandr-pryvalov.vercel.app",
         "github": "https://github.com/multumInParvo/oleksandr_pryvalov.git",
         "description": "art_portfolio_description",
         "technologies": [
