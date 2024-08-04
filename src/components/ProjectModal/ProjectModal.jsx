@@ -38,9 +38,9 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
   if (!isRendered) return null;
 
-  const imageSrc = project && typeof project.picture === 'object' 
-  ? (theme === 'light' ? project.picture.light : project.picture.dark)
-  : (project ? project.picture : null);
+  const imageSrc = project && typeof project.picture === 'object'
+    ? (theme === 'light' ? project.picture.light : project.picture.dark)
+    : (project ? project.picture : null);
 
   return (
     <div className={`modal-overlay ${isAnimating ? 'open' : ''}`} onClick={onClose}>
@@ -77,8 +77,12 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               </div>
 
               <div className="project-links-container">
-                <h3 className='project-link-title'>Website</h3>
-                {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
+                {project.title !== "Sophie Bluel" && (
+                  <>
+                    <h3 className='project-link-title'>Website</h3>
+                    {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
+                  </>
+                )}
                 <h3 className='project-link-title'>GitHub</h3>
                 {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>}
               </div>
