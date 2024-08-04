@@ -20,6 +20,7 @@
 @media (max-width: 1024px) {
     .contact-form-container {
       .menu-section-title {
+        pointer-events: none;
         font-size: 4rem;
         width: 90%;
       }

@@ -26,6 +26,7 @@
     }
   }
   .footer-text {
+    pointer-events: none;
     display: flex;
     align-items: center;
     color: var(--text-links);

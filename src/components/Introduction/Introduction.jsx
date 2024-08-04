@@ -1,6 +1,6 @@
 // Introduction //
 import React, { useContext } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../context/LanguageContext';
 import '../Introduction/Introduction.scss';
 
@@ -18,17 +18,17 @@ function Introduction() {
             </div>
             <div className='introduction-text'>
                 <p className='introduction-paragraph'>
-                {t.paragraph1}
+                    {t.paragraph1}
                 </p>
                 <p className='introduction-paragraph'>
-                {t.paragraph2}
+                    {t.paragraph2}
                 </p>
                 <p className='introduction-paragraph'>
-                {t.paragraph3.split('{projects}')[0]}
-                <Link to="/projects" className="projects-link">{t.projectsLink}</Link>
-                {t.paragraph3.split('{projects}')[1].split('{CV}')[0]}
-                <a href="/oleksandr_pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="cv-link">CV</a>
-                {t.paragraph3.split('{CV}')[1]}
+                    {t.paragraph3.split('{projects}')[0]}
+                    <Link to="/projects" className="projects-link">{t.projectsLink}</Link>
+                    {t.paragraph3.split('{projects}')[1].split('{CV}')[0]}
+                    <a href="/oleksandr_pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="cv-link">CV</a>
+                    {t.paragraph3.split('{CV}')[1]}
                 </p>
             </div>
         </div>

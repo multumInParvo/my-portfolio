@@ -17,6 +17,7 @@
         border-bottom: 1px solid var(--main-text-color);
 
         .contact-detail-title {
+            pointer-events: none;
             font-weight: 600;
             font-size: 14px;
             color: var(--main-text-color);
@@ -41,6 +42,7 @@
             flex-direction: column;
 
             .input-label {
+                pointer-events: none;
                 margin-bottom: 10px;
                 font-weight: 600;
                 font-size: 14px;

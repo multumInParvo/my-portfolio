@@ -10,6 +10,7 @@
     padding: 0;
 
     .menu-section-title {
+        pointer-events: none;
         cursor: default;
         position: absolute;
         opacity: 0.1;
