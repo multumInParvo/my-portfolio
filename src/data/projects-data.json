@@ -17,6 +17,18 @@
         "filter": "projects"
     },
     {
+        "picture": "/images/next.js_totorial.webp",
+        "title": "Next.js tutorial",
+        "website": "https://nextjs-dashboard-tau-lime-58.vercel.app/",
+        "github": "https://github.com/multumInParvo/nextjs-dashboard.git",
+        "description": "next.js_tutorial_description",
+        "technologies": [
+            "Next.js",
+            "Tailwind"
+        ],
+        "filter": "tutorials"
+    },
+    {
         "picture": "/images/art_portfolio.webp",
         "title": "Oleksandr Pryvalov",
         "website": "https://oleksandr-pryvalov.vercel.app",
