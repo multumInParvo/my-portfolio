@@ -11,6 +11,7 @@ import Projects from './pages/Projects/Projects';
 import Contact from './pages/Contact/Contact';
 import Cursor from './components/Cursor/Cursor';
 import Background from './components/Background/Background';
+import NotFound from './pages/NotFound/NotFound';
 import './styles/Theme.scss'
 import '../src/styles/Global.scss';
 
@@ -35,6 +36,7 @@ function App() {
                   <Route path="/" element={<HomeAbout />} />
                   <Route path="/projects" element={<Projects />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="*" element={<NotFound />} />
                 </Routes>
               </CSSTransition>
             </TransitionGroup>
