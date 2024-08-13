@@ -1,0 +1,64 @@
+@import '../../styles/Global.scss';
+
+.not-found-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .not-found {
+        opacity: 0.1;
+        width: 60%;
+        font-size: 6rem;
+        margin: 0 0 50px;
+        font-weight: 900;
+        text-align: center;
+        color: var(--bg-letters);
+        cursor: default;
+    }
+
+    .not-found-text {
+        padding: 0 20px;
+    }
+
+    .back-to-home {
+        margin-top: 50px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        width: 240px;
+        height: 30px;
+        font-size: 14px;
+        letter-spacing: 5px;
+        color: var(--main-text-color);
+        text-decoration: none;
+        border: solid 1px rgba(126, 110, 110, 0);
+        transition: border 1500ms;
+    
+        &:hover {
+          border: solid 1px var(--hover-menu-links);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .not-found-container {
+        .not-found {
+        pointer-events: none;
+        font-size: 4rem;
+        width: 90%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .not-found-container {
+        .not-found {
+        margin: 0 0 20px;
+        font-size: 3rem;
+        width: 90%;
+      }
+    }
+  }
