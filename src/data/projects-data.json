@@ -4,7 +4,7 @@
             "dark": "/images/portfolio-light.webp",
             "light": "/images/portfolio-dark.webp"
         },
-        "title": "Portfolio",
+        "title": "Dev Portfolio",
         "website": "https://oleksandrpryvalov.com/",
         "github": "https://github.com/multumInParvo/my-portfolio.git",
         "description": "portfolio_description",
@@ -30,7 +30,7 @@
     },
     {
         "picture": "/images/art_portfolio.webp",
-        "title": "Oleksandr Pryvalov",
+        "title": "Art Portfolio",
         "website": "https://oleksandr-pryvalov.vercel.app",
         "github": "https://github.com/multumInParvo/oleksandr_pryvalov.git",
         "description": "art_portfolio_description",
