@@ -47,6 +47,6 @@
     "art_portfolio_description": "Ceci est un site web expérimental utilisant React CRA pour présenter mes peintures. Ce projet m'a permis d'explorer divers outils React. Actuellement, je conçois un nouveau site web pour mon portfolio artistique.",
     "portfolio_description" : "Ceci est mon portfolio personnel en tant que développeur web. Je me suis concentré sur la création d'un design attrayant, en assurant une responsiveness complète et en mettant en œuvre les meilleures pratiques de développement web.",
     "nina_carducci_description": "Ce projet implique l'amélioration de la performance globale et du SEO du site d'une photographe.",
-    "next.js_tutorial_description": "Dans ce projet, j'ai suivi un tutoriel officiel de Next.js pour avoir un aperçu de ce framework React et pour le mettre en œuvre dans mon prochain projet"
+    "next.js_tutorial_description": "Dans ce projet, j'ai suivi le tutoriel officiel de Next.js pour avoir un aperçu de ce puissant framework React et pour tenter de l'implémenter dans mon prochain projet."
   }
 }

@@ -47,6 +47,6 @@
     "art_portfolio_description": "This is an experimental website using React CRA to showcase my paintings. This project allowed me to explore various React tools . Currently I'm designing a new website for my artistic portfolio.",
     "portfolio_description" : "This is my personal portfolio as a web developer. I focused on creating an appealing design, ensuring full responsiveness, and implementing web development best practices.",
     "nina_carducci_description": "This project involves improving the overall performance and SEO of a photographer's site.",
-    "next.js_tutorial_description": "In this project, I followed an official Next.js tutorial to get a taste of this React framework and to implement it on my next project."
+    "next.js_tutorial_description": "In this project, I followed the official Next.js tutorial to get a taste of this powerful React framework and to attempt to implement it on my next project."
   }
 }
