@@ -97,6 +97,17 @@
         "filter": "OpenClassrooms"
     },
     {
+        "picture": "/images/qwenta_menu_maker.webp",
+        "title": "Qwenta Menu Maker",
+        "website": "",
+        "github": "https://github.com/multumInParvo/ocp_7_qwenta_menu_maker_webgencia_.git",
+        "description": "qwenta_menu_maker_description",
+        "technologies": [
+            "Project management"
+        ],
+        "filter": "OpenClassrooms"
+    },
+    {
         "picture": "/images/sophie_bluel.webp",
         "title": "Sophie Bluel",
         "website": "",
