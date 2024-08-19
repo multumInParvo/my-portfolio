@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../context/LanguageContext';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -13,6 +13,14 @@ function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }, [menuOpen]);
 
     return (
         <header>
