@@ -38,7 +38,8 @@
   "projectDescriptions": {
     "argent_bank_description": "Ce projet consiste en developper le front-end d'une application bancaire avec React et Redux.",
     "724events_description": "Ce projet consiste à débugger et finaliser le développement d'un site web one-page.",
-    "kasa_description": "Ce projet consiste à développer le front-end d'une applicationen en utilisant React et React Router.",
+    "kasa_description": "Ce projet consiste à développer le front-end d'une application en utilisant React et React Router.",
+    "qwenta_menu_maker_description": "Ce projet implique la planification et la gestion du développement d'un site web client, comprenant la rédaction de spécifications techniques et la mise en œuvre de techniques de gestion de projet agile.",
     "sophie_bluel_description": "Ce projet consiste à développer une page web dynamique pour une architecte d'intérieur en utilisant JavaScript et une API.",
     "print_it_description": "Ce projet consiste à dynamiser le site statique d'une imprimerie en créant un carrousel interactif avec JavaScript.",
     "ohmyfood_description": "Ce projet consiste à développer l'interface mobile-first du site web d'une start-up.",
