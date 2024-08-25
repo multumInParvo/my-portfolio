@@ -52,7 +52,8 @@
             "React",
             "Redux",
             "Sass",
-            "Swagger"
+            "Swagger",
+            "RESTful API Integration"
         ],
         "filter": "OpenClassrooms"
     },
@@ -64,7 +65,8 @@
         "description": "724events_description",
         "technologies": [
             "React",
-            "Chrome DevTools",
+            "React Dev Tools",
+            "Unit Testing",
             "Debug"
         ],
         "filter": "OpenClassrooms"
@@ -78,7 +80,7 @@
         "technologies": [
             "HTML",
             "CSS",
-            "JavaScript",
+            "Lighthouse",
             "SEO"
         ],
         "filter": "OpenClassrooms"
@@ -92,6 +94,7 @@
         "technologies": [
             "React",
             "CSS",
+            "JSON",
             "Figma"
         ],
         "filter": "OpenClassrooms"
@@ -103,7 +106,9 @@
         "github": "https://github.com/multumInParvo/ocp_7_qwenta_menu_maker_webgencia_.git",
         "description": "qwenta_menu_maker_description",
         "technologies": [
-            "Project management"
+            "Project Management",
+            "Kanban Methodology",
+            "Agile Practices"
         ],
         "filter": "OpenClassrooms"
     },
