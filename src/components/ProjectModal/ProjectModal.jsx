@@ -1,3 +1,5 @@
+// ProjectModal.jsx
+
 import React, { useEffect, useState, useContext } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { LanguageContext } from '../../context/LanguageContext';
@@ -77,7 +79,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               </div>
 
               <div className="project-links-container">
-                {project.title !== "Sophie Bluel" && (
+                {project.title !== "Sophie Bluel" && project.title !== "Qwenta Menu Maker" && (
                   <>
                     <h3 className='project-link-title'>Website</h3>
                     {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
