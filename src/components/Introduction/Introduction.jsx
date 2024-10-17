@@ -27,7 +27,7 @@ function Introduction() {
                     {t.paragraph3.split('{projects}')[0]}
                     <Link to="/projects" className="projects-link">{t.projectsLink}</Link>
                     {t.paragraph3.split('{projects}')[1].split('{CV}')[0]}
-                    <a href="/CV_Pryvalov_Oleksandr_2024.pdf" target="_blank" rel="noopener noreferrer" className="cv-link">CV</a>
+                    <a href="/cv_Oleksandr_Pryvalov_2024.pdf" target="_blank" rel="noopener noreferrer" className="cv-link">CV</a>
                     {t.paragraph3.split('{CV}')[1]}
                 </p>
             </div>
