@@ -79,15 +79,16 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               </div>
 
               <div className="project-links-container">
-                {project.title !== "Sophie Bluel" && project.title !== "Qwenta Menu Maker" && (
-                  <>
-                    <h3 className='project-link-title'>Website</h3>
-                    {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
-                  </>
-                )}
-                <h3 className='project-link-title'>GitHub</h3>
-                {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>}
-              </div>
+  {project.title !== "Sophie Bluel" && project.title !== "Qwenta Menu Maker" && project.title !== "Art Portfolio" && (
+    <>
+      <h3 className='project-link-title'>GitHub</h3>
+      {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a>}
+    </>
+  )}
+  <h3 className='project-link-title'>Website</h3>
+  {project.website && <a href={project.website} target="_blank" rel="noopener noreferrer">{project.website}</a>}
+</div>
+
             </>
           )}
         </div>
