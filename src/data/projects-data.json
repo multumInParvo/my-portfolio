@@ -1,6 +1,21 @@
 [
     {
         "picture": {
+            "dark": "/images/art_portfolio_light.webp",
+            "light": "/images/art_portfolio_dark.webp"
+        },
+        "title": "Art Portfolio",
+        "website": "https://oleksandrpryvalov.art/",
+        "description": "art_portfolio_description",
+        "technologies": [
+            "Next.js",
+            "Tailwind",
+            "Email.js"
+        ],
+        "filter": "projects"
+    },
+    {
+        "picture": {
             "dark": "/images/portfolio-light.webp",
             "light": "/images/portfolio-dark.webp"
         },
@@ -27,20 +42,6 @@
             "Tailwind"
         ],
         "filter": "tutorials"
-    },
-    {
-        "picture": "/images/art_portfolio.webp",
-        "title": "Art Portfolio",
-        "website": "https://oleksandr-pryvalov.vercel.app",
-        "github": "https://github.com/multumInParvo/oleksandr_pryvalov.git",
-        "description": "art_portfolio_description",
-        "technologies": [
-            "React",
-            "Sass",
-            "HTML",
-            "Email.js"
-        ],
-        "filter": "projects"
     },
     {
         "picture": "/images/argent_bank.webp",
@@ -165,18 +166,6 @@
         "technologies": [
             "HTML",
             "Figma",
-            "CSS"
-        ],
-        "filter": "OpenClassrooms"
-    },
-    {
-        "picture": "/images/riding_cities.webp",
-        "title": "Riding Cities",
-        "website": "https://multuminparvo.github.io/OCP_2_riding_cities/",
-        "github": "https://github.com/multumInParvo/OCP_2_riding_cities.git",
-        "description": "riding_cities_description",
-        "technologies": [
-            "HTML",
             "CSS"
         ],
         "filter": "OpenClassrooms"
